@@ -1,0 +1,103 @@
+/* Resetear los márgenes y el padding para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    padding: 70px;
+    background-color: #2233b4;
+    color: #fff;
+}
+
+/* Estilos para las secciones principales */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Estilos para la sección del formulario de contacto */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Estilos para el título del formulario */
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #373737;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para la sección de información de contacto */
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Estilos para el título de la información de contacto */
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la lista de información */
+.contact-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2233b4;
+    color: #fff;
+}

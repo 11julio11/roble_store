@@ -1,0 +1,80 @@
+/* Estilos para la página de Promociones */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1 {
+    padding: 90px;
+    background-color: #2233b4;
+    text-align: center;
+    margin-top: 20px;
+    color: #fcfcfc;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 10px 3px 5px -6px rgba(10, 10, 10, 0.53);
+    -moz-box-shadow: 10px 3px 5px -6px rgba(18, 19, 18, 0.53);
+    box-shadow: 10px 3px 5px -6px rgba(0, 0, 0, 0.53);
+}
+
+.card:hover{
+    opacity: 1;
+    transition: opacity 1.5s;
+    box-shadow: 0 0 5px rgba(12, 206, 190, 0.3);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.card button {
+    background-color: #2233b4;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card button:hover {
+    background-color: #e35c00;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2233b4;
+    color: #fff;
+}

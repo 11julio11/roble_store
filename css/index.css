@@ -1,0 +1,143 @@
+/* Resetear los márgenes y el padding para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #393ecd;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* Estilos para el encabezado */
+header {
+  background-color: #2233b4;
+  height: 30px;
+  color: #fdfbfa;
+  padding: 70px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+
+h2{
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Estilos para los productos */
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product {
+  display: inline-block;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  flex-basis: calc(33.33% - 20px);
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #0a0a0a;
+  -webkit-box-shadow: 10px 3px 5px -6px rgba(10, 10, 10, 0.53);
+  -moz-box-shadow: 10px 3px 5px -6px rgba(18, 19, 18, 0.53);
+  box-shadow: 10px 3px 5px -6px rgba(0, 0, 0, 0.982);
+}
+
+.product:hover {
+  opacity: 1;
+  transition: opacity 1.5s;
+  box-shadow: 0 0 5px rgb(249, 250, 250);
+}
+
+.product img {
+  height: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.product p {
+  margin-bottom: 10px;
+}
+
+.product button {
+  background-color: #2233b4;
+  color: #a32c2c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.product button:hover {
+  background-color: #ffa202;
+}
+
+/* Estilos para el carrito de compras */
+#cartItems {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+#cartItems p {
+  text-align: center;
+  margin: 0;
+}
+
+#checkoutBtn {
+  background-color: #2233b4;
+  text-align: center;
+  margin-top: 10px; /* Ajusta este valor según lo que necesites */
+  margin-bottom: 10px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#checkoutBtn:hover {
+  background-color: #ff7b00;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #2233b4;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+

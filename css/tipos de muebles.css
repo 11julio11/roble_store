@@ -1,0 +1,94 @@
+/* Estilos para la página de Tipos de muebles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1 {
+    padding: 90px;
+    background-color: #2233b4;
+    text-align: center;
+    margin-top: 20px;
+    color: #fcfcfc;
+}
+
+hr {
+    margin: 20px auto;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.producto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.producto {
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 10px 3px 5px -6px rgba(10, 10, 10, 0.53);
+    -moz-box-shadow: 10px 3px 5px -6px rgba(18, 19, 18, 0.53);
+    box-shadow: 10px 3px 5px -6px rgba(0, 0, 0, 0.53);
+}
+
+.producto:hover{
+    opacity: 1;
+    transition: opacity 1.5s;
+    box-shadow: 0 0 5px rgba(218, 222, 221, 0.3);
+}
+
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 14px;
+    margin: 0 0 15px;
+}
+
+.producto button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.producto button:hover {
+    background-color: #e35c00;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2233b4;
+    color: #fff;
+}
