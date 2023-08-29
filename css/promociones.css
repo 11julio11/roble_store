@@ -7,6 +7,15 @@ body {
     color: #333;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
 h1 {
     padding: 90px;
     background-color: #2233b4;
