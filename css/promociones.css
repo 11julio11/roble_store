@@ -90,6 +90,7 @@ footer {
     background-color: #2233b4;
     color: #fff;
 }
+
 @media (min-width: 1024px) {
     .card{
         height: 700px;
