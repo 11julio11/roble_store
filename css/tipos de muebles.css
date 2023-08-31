@@ -25,7 +25,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -34,7 +34,7 @@ hr {
     width: calc(33.33% - 20px);
     margin-bottom: 30px;
     padding: 15px;
-    height: 660;
+    height: 60;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -48,7 +48,7 @@ hr {
 .producto:hover{
     opacity: 1;
     transition: opacity 1.5s;
-    box-shadow: 0 0 5px rgba(218, 222, 221, 0.3);
+    box-shadow: 0 0 5px rgba(27, 7, 201, 0.883);
 }
 
 
@@ -69,7 +69,7 @@ hr {
 }
 
 .producto button {
-    background-color: #ff6600;
+    background-color: #0b3dc6f2;
     color: #fff;
     border: none;
     padding: 8px 15px;
@@ -80,7 +80,7 @@ hr {
 
 .producto a {
     text-decoration: none;
-    color: #fff;
+    color: #f4f3f3;
 }
 
 .producto button:hover {
@@ -94,16 +94,58 @@ footer {
     color: #fff;
 }
 
-@media (min-width: 1024px){
-    .producto{
-        height: 700px;
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
     }
-
-    .producto-h3{
-        height: 110px;
+  
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    producto-p{
-        height: 300px;
+  
+    .product {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
     }
-}
+  }
+  
+  /* Estilos para pantallas medianas (tabletas) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 16px;
+    }
+  
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+  
+    .product {
+        width: auto;
+    }
+  }
+  
+  /* Estilos para pantallas grandes (escritorios) */
+  @media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+  
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        justify-content: center;
+    }
+    
+    .product {
+        width: auto;
+    }
+  }
+  
