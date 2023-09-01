@@ -48,7 +48,7 @@ a{
   background-color: #ffffff;
   border-radius: 5px;
   flex-basis: calc(33.33% - 20px);
-  margin: 20px;
+  margin: 30px;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   justify-content: center;
@@ -66,12 +66,19 @@ a{
 }
 
 .product img {
-  height: auto;
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 10px;
+  opacity: 0.5;
+  transition: transform 0.3s, box-shadw 0.3s;
+}
+
+.product img:hover{
+  opacity: 1;
+  transform: scale(2.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .product h3 {

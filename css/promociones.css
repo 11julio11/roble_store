@@ -37,6 +37,8 @@ h1 {
     padding: 15px;
     height: 660px;
     text-align: center;
+    z-index: 1;
+    transition: transform 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 10px 3px 5px -6px rgba(10, 10, 10, 0.53);
     -moz-box-shadow: 10px 3px 5px -6px rgba(18, 19, 18, 0.53);
@@ -52,9 +54,18 @@ h1 {
 .card img {
     max-width: 100%;
     height: auto;
-
+    border-radius: 5px;
+    border-bottom: 10px;
+    object-fit: cover;
+    opacity: 1;
+    transition: transform 0.3s, box-shadw 0.3s;
 }
 
+.card img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .card h3 {
     height: 100px;
     font-weight: bold;

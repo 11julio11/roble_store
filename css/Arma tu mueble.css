@@ -58,15 +58,40 @@ body {
 
 /* Estilos para las imágenes de los ítems */
 .item img {
-    max-width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: transform 0.3s, box-shadw 0.3s;
 }
+
+.item img:hover{
+    opacity: 1;
+    transform: scale(2.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+
 
 /* Estilos para los pies de las imágenes */
 .item h3 {
     font-size: 18px;
     margin-top: 10px;
+}
+
+.hero .btn{
+    background-color: #ffa202;
+    color: #120ed9f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover{
+  background-color: #fffefada;
 }
 
 /* Estilos para el pie de página */
