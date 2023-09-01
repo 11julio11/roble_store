@@ -41,6 +41,17 @@ h1 {
 .product img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+    transition: transform 0.3s, box-shadw 0.3s;
+}
+
+.product img:hover{
+    opacity: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .product-title {
