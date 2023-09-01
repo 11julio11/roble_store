@@ -77,7 +77,60 @@ h1 {
 .product button:hover {
     background-color: #ffac05;
 }
+/*estilos para pantallas pequeñas*/
+@media(max-width: 767px){
+    body{
+        font-size: 14px;
+    }
 
+    .container{
+        display: grid;
+        grid-area: wrap;
+        justify-content: center;
+    }
+
+    .product{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* estilos para pantallas medianas*/
+@media(min-width: 768px) and (max-width: 1023px){
+    body{
+        font-size: 16px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .product{
+        width: auto;
+    }
+}
+
+/*estilos para pantallas grandes*/
+@media(min-width: 1024px){
+    body{
+        font-size: 18px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .product{
+        width: auto;
+    }
+}
 
 footer {
     text-align: center;
