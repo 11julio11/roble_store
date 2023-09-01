@@ -46,21 +46,21 @@ h1 {
 .product-title {
     font-weight: bold;
     margin: 10px 0;
-    color: #333;
+    color: #050505;
 }
 
 .product-description {
     margin-bottom: 10px;
-    color: #666;
+    color: #030303;
 }
 
 .product-price {
     font-size: 18px;
-    color: #ff6600;
+    color: #000000;
 }
 
 .product button{
-    background-color: #3498db;
+    background-color: #0b3db3;
     color: #fff;
     border: none;
     padding: 5px 10px;

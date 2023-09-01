@@ -47,7 +47,7 @@ hr {
 .producto:hover{
     opacity: 1;
     transition: opacity 1.5s;
-    box-shadow: 0 0 5px rgba(218, 222, 221, 0.3);
+    box-shadow: 0 0 5px rgba(10, 82, 175, 0.997);
 }
 
 
@@ -68,7 +68,7 @@ hr {
 }
 
 .producto button {
-    background-color: #ff6600;
+    background-color: #0915c0ea;
     color: #fff;
     border: none;
     padding: 8px 15px;
@@ -92,10 +92,21 @@ footer {
     background-color: #2233b4;
     color: #fff;
 }
+/*estilos para pantallas pequeñas*/
+@media (min-width: 767px){
+    body{
+        font-size: 14px;
+    }
 
-@media (min-width: 1024px){
+    .producto-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .producto{
         height: 700px;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .producto-h3{
@@ -104,5 +115,41 @@ footer {
 
     producto-p{
         height: 300px;
+    }
+}
+
+/*estilos para pantallas medianas*/
+@media(min-width: 768px) and (max-width: 1032px){
+    body{
+        font-size: 16px;
+    }
+
+    .producto-container{
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .producto{
+        width: auto;
+    }
+}
+
+/*estilos para pantallas grandes*/
+@media(min-width: 1024px){
+    body{
+        font-size: 18px;
+    }
+
+    .producto-container{
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .producto{
+        width: auto;
     }
 }
