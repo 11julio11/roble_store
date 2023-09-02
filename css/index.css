@@ -203,3 +203,62 @@ footer {
   padding: 20px;
 }
 
+
+.nav-prom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  background-color:lightgrey;
+}
+
+.container{
+  position: relative;
+}
+
+.container .slider{
+  display: flex;
+  background:#0a0a0a;
+  padding: 2px;
+  width:1150px;
+  height: 150px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+}
+
+.container .slider img{
+  margin: 3px;
+  transition: transform 0.3s, box-shadw 0.3s;
+  
+}
+
+
+.slider img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  }
+  
+
+.container .control{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #02293b;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.container .left{
+  left: 0;
+  top: 50%;
+  transform: translate(-150%, -50%)
+}
+
+.container .right{
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%)
+}

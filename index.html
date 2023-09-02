@@ -14,9 +14,9 @@
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
-          <buttom class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
-          </buttom>
+          </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
@@ -25,20 +25,20 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/index.html">inicio</a>
+                  <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    muebles
+                    Muebles
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="Promociones.html">promociones</a></li>
-                    <li><a class="dropdown-item" href="lo mas vendido.html">lo mas vendido</a></li>
+                    <li><a class="dropdown-item" href="Promociones.html">Promociones</a></li>
+                    <li><a class="dropdown-item" href="lo mas vendido.html">Lo mas vendido</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="tipos de muebles.html">tipos de muebles</a></li>
-                    <li><a class="dropdown-item" href="Arma tu mueble.html">arma tu mueble</a></li>
+                    <li><a class="dropdown-item" href="tipos de muebles.html">Tipos de muebles</a></li>
+                    <li><a class="dropdown-item" href="Arma tu mueble.html">Arma tu mueble</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -124,6 +124,31 @@
         </div>
       </section>
 
+
+      <h2 style="text-align: center">Promociones del mes</h2>
+      <section class="nav-prom">
+        <div class="container">
+          <img class="control left" src="/img/img1.png" alt="">
+          <div class="slider">
+            <img class="" src="img/armario-de-roble-natural_9062237.jpg" alt="">
+            <img class="" src="img/asientosolo.jpg" alt="">
+            <img class="" src="img/asiento reclinable.jpg" alt="">
+            <img class="" src="img/Comoda.jpg" alt="">
+            <img class="" src="img/cama nido.png" alt="">
+            <img src="img/sillon.png" alt="">
+            <img src="img/sofa classic.jpg" alt="">
+            <img src="img/closet biriloche.png" alt="">
+            <img src="img/comoda 5 cajones.png" alt="">
+            <img src="img/base de cama doble.png" alt="">
+              
+     
+
+          </div>
+          <img class="control right" src="/img/img2.png" alt="">
+        </div>        
+      </section>
+
+
       <section>
         <h2 style="text-align: center">Carrito de Compras</h2>
         <div id="cartItems">
@@ -131,11 +156,32 @@
           <button  class="btn" id="checkoutBtn">Pagar</button>
         </div>
       </section>
+
+
+
+     
     </main>
+
+    <script>
+      const prev = document.querySelector('.left')
+      const next = document.querySelector('.right')
+      const slider = document.querySelector('.slider')
+
+
+      prev.addEventListener ('click', () => { 
+      slider.scrollLeft -= 300
+      })
+
+      next.addEventListener ('click', () => { 
+      slider.scrollLeft += 300
+
+
+})
+    </script>
 
     <br />
     <footer>
-      <p>Derechos de Autor &copy; 2022 Tienda de Muebles</p>
+      <p>Derechos de Autor &copy; 2023 Desing:  Roble's Store</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
