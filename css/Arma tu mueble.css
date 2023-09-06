@@ -30,6 +30,28 @@ body {
     border-radius: 5px;
 }
 
+/*botones de agragacion*/
+button{
+    background-color: #2233b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #ffa202;
+}
+
+
 /* Estilos para la sección de la galería */
 .gallery {
     display: grid;

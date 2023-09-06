@@ -30,7 +30,7 @@ header {
 /* Estilos para la sección de productos */
 .products-section {
     flex: 1;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ddd;
     background-color: #fff;
 }
@@ -38,31 +38,72 @@ header {
 /* Estilos para cada producto */
 .product {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1 px solid #fffcfc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 10px 3px 5px -6px rgba(10, 10, 10, 0.53);
+    -moz-box-shadow: 10px 3px 5px -6px rgba(18, 19, 18, 0.53);
+    box-shadow: 10px 3px 5px -6px rgba(0, 0, 0, 0.53);
+}
+
+.product:hover{
+    opacity: 1;
+    transition: opacity 1.5s;
+    box-shadow: 0 0 5px rgba(10, 82, 175, 0.997);
 }
 
 .product img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 5px;
+    opacity: 0.5;
+    transition: transform 0.3s, box-shadw 0.3s;
+}
+
+.product img:hover{
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Estilos para la sección del carrito */
 .cart-section {
     flex: 1;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #ddd;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 /* Estilos para el título del carrito */
 .cart-section h2 {
     margin-bottom: 10px;
 }
+ 
+/*estilos para los botones*/
+.product button{
+    background-color: #2233b4;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.product a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.product button:hover{
+    background-color: #ffac05;
+}
 /* Estilos para los elementos del carrito */
 .cart-item {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f8f8f8;
     padding: 10px 0;
     display: flex;
     justify-content: space-between;

@@ -153,6 +153,10 @@ function agregarMueblePersonalizado() {
   }
 
   //lo mas vendido
+ //escribe aqui el codigo de esta sesion 
+
+
+
 
   let carrito = [];
 
@@ -181,6 +185,11 @@ function actualizarCarrito() {
 }
 
 //promociones
+//escribe aqui el codigo de esta sesion 
+
+
+
+
 // registro
 document.addEventListener("DOMContentLoaded", function() {
     const registrationForm = document.getElementById("registration-form");
@@ -212,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //tipos de muebles
 document.addEventListener("DOMContentLoaded", function() {
-    const comprarButtons = document.querySelectorAll(".btn-comprar");
+    const comprarButtons = document.querySelectorAll(".btn-Agregar al Carrito");
     const carritoContainer = document.getElementById("carrito");
 
     comprarButtons.forEach(button => {
@@ -263,5 +272,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Luego, podrías mostrar un mensaje de éxito o error.
     });
 });
+
+
 
 
