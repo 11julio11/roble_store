@@ -16,7 +16,7 @@ body {
 
 
 /* Estilos para el encabezado */
-header {
+header{
   background-color: #2233b4;
   height: 90px;
   color: #fdfbfa;
@@ -24,8 +24,6 @@ header {
   margin-top: 50px;
   text-align: center;
 }
-
-
 
 
 h2{
