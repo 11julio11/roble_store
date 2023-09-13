@@ -1,8 +1,13 @@
 /* Estilos para la página de Promociones */
+*{
+    margin: 2;
+    padding: 1;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f7f7f7;
     color: #333;
 }
