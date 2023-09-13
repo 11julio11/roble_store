@@ -18,18 +18,12 @@ body {
 /* Estilos para el encabezado */
 header {
   background-color: #2233b4;
-  height: 100px 100px;
-  background-repeat: no-repeat;
-  background-size: cover ;
-  background-position: center center;
+  height: 70px;
   color: #fdfbfa;
-  padding: 90px;
-  margin-top: 90px;
+  padding: 70px;
+  margin-top: 50px;
   text-align: center;
 }
-
-
-
 
 
 h2{
