@@ -17,10 +17,11 @@ body {
 
 /* Estilos para el encabezado */
 header{
+  background-image: url(../img/roble.jpeg);
   background-color: #2233b4;
   height: 90px;
   color: #fdfbfa;
-  padding: 150px;
+  padding: 180px;
   margin-top: 50px;
   text-align: center;
 }
