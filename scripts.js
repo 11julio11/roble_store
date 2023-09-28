@@ -76,113 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //carrito
-  let cartItems = [];
-
-function agregarProducto(nombre, precio) {
-  cartItems.push({ nombre, precio });
-  actualizarCarrito();
-}
-
-function actualizarCarrito() {
-  const cartItemsContainer = document.getElementById("cartItems");
-  cartItemsContainer.innerHTML = "";
-
-  if (cartItems.length === 0) {
-    cartItemsContainer.innerHTML = "<p>No hay productos en el carrito</p>";
-  } else {
-    let total = 0;
-
-    cartItems.forEach(item => {
-      cartItemsContainer.innerHTML += `
-        <div class="cart-item">
-          <p>${item.nombre} - $${item.precio.toFixed(2)}</p>
-        </div>
-      `;
-      total += item.precio;
-    });
-
-    cartItemsContainer.innerHTML += `
-      <p class="cart-total">Total: $${total.toFixed(2)}</p>
-    `;
-  }
-}
-
-function realizarPago() {
-  if (cartItems.length === 0) {
-    alert("No hay productos en el carrito. Agrega productos antes de pagar.");
-  } else {
-    alert("¡Pago realizado con éxito!");
-    cartItems = [];
-    actualizarCarrito();
-  }
-}
-
-//Arma tu mueble
-function agregarMueblePersonalizado() {
-    const colorSelect = document.getElementById("color-select");
-    const materialSelect = document.getElementById("material-select");
-    const sizeSelect = document.getElementById("size-select");
-  
-    const color = colorSelect.value;
-    const material = materialSelect.value;
-    const size = sizeSelect.value;
-  
-    const mueblePersonalizado = {
-      nombre: `Mueble ${color} ${material} ${size}`,
-      precio: calcularPrecioPersonalizado(color, material, size)
-    };
-  
-    agregarProducto(mueblePersonalizado.nombre, mueblePersonalizado.precio);
-    alert("Mueble personalizado agregado al carrito");
-  }
-  
-  function calcularPrecioPersonalizado(color, material, size) {
-    let precioBase = 50.00; // Precio base para muebles personalizados
-    // Calcula el precio adicional según las opciones seleccionadas
-    if (color === "rojo") {
-      precioBase += 10.00;
-    } else if (color === "azul") {
-      precioBase += 15.00;
-    } else if (color === "verde") {
-      precioBase += 12.00;
-    }
-    // Repite el proceso para las otras opciones (material y tamaño)
-    // ...
-  
-    return precioBase;
-  }
-
-  //lo mas vendido
- //escribe aqui el codigo de esta sesion 
 
 
-
-
-  let carrito = [];
-
-function agregarAlCarrito(producto, precio) {
-    const item = {
-        producto: producto,
-        precio: precio
-    };
-    carrito.push(item);
-    actualizarCarrito();
-}
-
-function actualizarCarrito() {
-    const carritoContainer = document.getElementById("carrito-container");
-    carritoContainer.innerHTML = "";
-
-    for (const item of carrito) {
-        const carritoItem = document.createElement("div");
-        carritoItem.classList.add("carrito-item");
-        carritoItem.innerHTML = `
-            <div>${item.producto}</div>
-            <div>$${item.precio.toFixed(2)}</div>
-        `;
-        carritoContainer.appendChild(carritoItem);
-    }
-}
 
 //promociones
 //escribe aqui el codigo de esta sesion 
@@ -220,27 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //tipos de muebles
-document.addEventListener("DOMContentLoaded", function() {
-    const comprarButtons = document.querySelectorAll(".btn-Agregar al Carrito");
-    const carritoContainer = document.getElementById("carrito");
 
-    comprarButtons.forEach(button => {
-        button.addEventListener("click", function(event) {
-            const producto = button.parentElement;
-            const nombre = producto.querySelector("h3").textContent;
-            const precio = producto.querySelector("p:last-child").textContent;
-
-            const productoAgregado = document.createElement("div");
-            productoAgregado.classList.add("carrito-item");
-            productoAgregado.innerHTML = `
-                <p><strong>${nombre}</strong></p>
-                <p>${precio}</p>
-            `;
-
-            carritoContainer.appendChild(productoAgregado);
-        });
-    });
-});
 
 //usuario
 document.addEventListener("DOMContentLoaded", function() {
