@@ -117,36 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //tipos de muebles
 
 
-//usuario
-document.addEventListener("DOMContentLoaded", function() {
-    const editProfileForm = document.getElementById("edit-profile-form");
-    const changePasswordForm = document.getElementById("change-password-form");
 
-    editProfileForm.addEventListener("submit", function(event) {
-        event.preventDefault();
-        const newEmail = document.getElementById("new-email").value;
-        const newCountry = document.getElementById("new-country").value;
-        const newAge = document.getElementById("new-age").value;
-        const newGender = document.getElementById("new-gender").value;
-
-        // Aquí podrías realizar una acción con los nuevos datos del perfil, por ejemplo, enviarlos al servidor para actualizarlos.
-        // Luego, podrías mostrar un mensaje de éxito o error.
-    });
-
-    changePasswordForm.addEventListener("submit", function(event) {
-        event.preventDefault();
-        const newPassword = document.getElementById("new-password").value;
-        const confirmNewPassword = document.getElementById("confirm-new-password").value;
-
-        if (newPassword !== confirmNewPassword) {
-            alert("Las contraseñas no coinciden");
-            return;
-        }
-
-        // Aquí podrías realizar una acción para cambiar la contraseña, como enviarla al servidor.
-        // Luego, podrías mostrar un mensaje de éxito o error.
-    });
-});
 
 
 
