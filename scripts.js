@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  
   //carrito
   //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
