@@ -30,7 +30,6 @@ h1 {
     margin-top: 20px;
     color: #fcfcfc;
 }
-
 .contenedor{
     max-width: 1200px;
     padding: 10px;
@@ -90,8 +89,12 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.contenedor .contenedor-items .item .boton-item:hover{
+   background-color: #2233b4; 
+}
 /* seccion carrito */
-.promociones{
+.carrito{
     border: 1px solid #666;
     width: 35%;
     margin-top: 30px;
@@ -105,13 +108,13 @@ h1 {
     margin-right: -100%;
     opacity: 0;
 }
-.promociones .header-promociones{
+.carrito .header-carrito{
     background-color: #000;
     color: #fff;
     text-align: center;
     padding: 30px 0;
 }
-.promociones .promociones-item{
+.carrito .carrito-item{
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
@@ -119,20 +122,20 @@ h1 {
     border-bottom: 1px solid #666;
     padding: 20px;
 }
-.promociones .promociones-item img{
+.carrito .carrito-item img{
     margin-right: 20px;
 }
-.promociones .promociones-item .promociones-item-titulo{
+.carrito .carrito-item .carrito-item-titulo{
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-.promociones .promociones-item .selector-cantidad{
+.carrito .carrito-item .selector-cantidad{
     display: inline-block;
     margin-right: 25px;
 }
-.promociones .promociones-item .promociones-item-cantidad{
+.carrito .carrito-item .carrito-item-cantidad{
     border: none;
     font-size: 18px;
     background-color: transparent;
@@ -141,7 +144,7 @@ h1 {
     padding: 5px;
     text-align: center;
 }
-.promociones .promociones-item .selector-cantidad i{
+.carrito .carrito-item .selector-cantidad i{
     font-size: 18px;
     width: 32px;
     height: 32px;
@@ -151,13 +154,13 @@ h1 {
     border: 1px solid #000;
     cursor: pointer;
 }
-.promociones .promociones-item .promociones-item-precio{
+.carrito .carrito-item .carrito-item-precio{
     font-weight: bold;
     display: inline-block;
     font-size: 18px;
     margin-bottom: 5px;
 }
-.promociones .promociones-item .btn-eliminar{
+.carrito .carrito-item .btn-eliminar{
     position: absolute;
     right: 15px;
     top: 15px;
@@ -174,15 +177,15 @@ h1 {
     background: transparent;
     z-index: 20;
 }
-.promociones .promociones-item .btn-eliminar i{
+.carrito .carrito-item .btn-eliminar i{
     pointer-events: none;
 }
 
-.promociones-total{
+.carrito-total{
     background-color: #f3f3f3;
     padding: 30px;
 }
-.promociones-total .fila{
+.carrito-total .fila{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,7 +193,7 @@ h1 {
     font-weight: bold;
     margin-bottom: 10px;
 }
-.promociones-total .btn-pagar{
+.carrito-total .btn-pagar{
     display: block;
     width: 100%;
     border: none;
@@ -205,7 +208,7 @@ h1 {
     cursor: pointer;
     transition: .3s;
 }
-.promociones-total .btn-pagar:hover{
+.carrito-total .btn-pagar:hover{
     scale: 1.05;
 }
 
@@ -217,10 +220,11 @@ h1 {
     .contenedor-items{
         width: 100% !important;
     }
-    .promociones{
+    .carrito{
         width: 100%;
     }
   }
+
 
 footer {
     text-align: center;
@@ -228,7 +232,7 @@ footer {
     background-color: #2233b4;
     color: #fff;
 }
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
     .card{
         height: 700px;
     }
@@ -238,4 +242,4 @@ footer {
     .card-p{
         height: 300px;
     }
-}
+}*/

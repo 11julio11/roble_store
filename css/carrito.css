@@ -82,6 +82,10 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.contenedor .contenedor-items .item .boton-item:hover{
+   background-color: #2233b4; 
+}
 /* seccion carrito */
 .carrito{
     border: 1px solid #666;
