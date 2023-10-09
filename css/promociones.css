@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
 
 /* Estilos para la página de Promociones */
 *{
@@ -31,7 +31,7 @@ h1 {
     color: #fcfcfc;
 }
 .contenedor{
-    max-width: 1200px;
+    max-width: 1205px;
     padding: 10px;
     margin: auto;
     display: flex;
@@ -42,7 +42,7 @@ h1 {
 
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
-    margin-top: 30px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap:30px;
@@ -60,11 +60,17 @@ h1 {
     transition: .3s;
 }
 .contenedor .contenedor-items .item .img-item{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s, box-shadw 0.3s;
 }
 .contenedor .contenedor-items .item:hover{
-    box-shadow: 0 0 10px #666;
-    scale: 1.05;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(19, 12, 225, 0.947);
+    
 }
 .contenedor .contenedor-items .item .titulo-item{
     display: block;
@@ -210,6 +216,7 @@ h1 {
 }
 .carrito-total .btn-pagar:hover{
     scale: 1.05;
+    background-color: #2233b4;
 }
 
 /* SECCION RESPONSIVE */

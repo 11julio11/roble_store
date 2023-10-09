@@ -20,7 +20,7 @@ header {
     text-align: center;
     padding: 70px;
     background-color: #2233b4;
-    color: #fff;
+    color: #f4efef;
 }
 
 .contenedor{
@@ -31,6 +31,13 @@ header {
     justify-content: space-between;
     /* oculto lo que queda fuera del .contenedor */
     contain: paint;
+}
+
+h3{
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+    color: #092cf3;
 }
 
 /* SECCION CONTENEDOR DE ITEMS */
