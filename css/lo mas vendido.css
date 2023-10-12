@@ -9,11 +9,15 @@ body {
 }
 
 h1 {
-    padding: 90px;
+    background-image: url(../img/lo\ mas\ vendido.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 290px;
     background-color: #2233b4;
     text-align: center;
     margin-top: 20px;
-    color: #fcfcfc;
+    color: #ffffff;
 }
 
 .contenedor{

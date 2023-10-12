@@ -17,19 +17,23 @@ body {
 
 /* Estilos para el encabezado del héroe */
 .hero {
+    background-image: url(../img/imagen67.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
-    padding: 100px 0;
-    background-color: #2233b4;
+    padding: 190px 0;
+    background-color: #22b45c;
     color: #fff;
 }
 
 /* Estilos para el encabezado */
-header {
+/*header {
     text-align: center;
     padding: 70px;
-    background-color: #2233b4;
+    background-color: #078d50;
     color: #f4efef;
-}
+}*/
 
 .contenedor{
     max-width: 1200px;
@@ -231,6 +235,11 @@ h3{
     .carrito{
         width: 100%;
     }
+  }
+
+  /*estilo para button-btn*/
+  button a.btn:hover{
+    background-color: #f3b408;
   }
 
 /* Estilos para el pie de página */
