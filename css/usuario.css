@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+
 /* Estilos para la página de Perfil de Usuario */
 body {
     font-family: Arial, sans-serif;
@@ -79,6 +90,16 @@ main {
 }
 
 /* Estilos para el pie de página */
+.container-pagina{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+ }
+ 
+
+
 main {
     width: 100%;
     display: flex;
@@ -140,4 +161,62 @@ footer {
     padding: 20px;
     background-color: #2233b4;
     color: #fff;
+}
+
+.footer-row{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links{
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+ padding-bottom: 10px;
+ display: inline-block;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-links ul li {
+  line-height: 2.2;
+}
+
+.footer-links ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: #0088a9;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+  .container-pagina {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 20px;
+  }
+
+  .footer-row {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .footer-links {
+      width: 25%;
+      padding: 0 20px;
+  }
 }
