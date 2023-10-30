@@ -10,9 +10,9 @@
 
 /* Estilos generales para el cuerpo de la página */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  color: #393ecd;
+  font-family: Cooper, jumple, sans-serif;
+  background-color:  #dcbc74 ;
+  color: #184411;
   line-height: 1.6;
   margin: 0;
 }
@@ -26,7 +26,7 @@ header{
   background-size: cover;
   background-color: #2233b4;
   height: 100px;
-  color: #fdfbfa;
+  color: #26600f;
   padding: 290px;
   margin-top: 50px;
   text-align: center;
@@ -55,7 +55,7 @@ h3{
   text-align: center;
   margin-top: 20px;
   box-sizing: border-box;
-  color: #092cf3;
+  color: #184411;
 }
 
 /* SECCION CONTENEDOR DE ITEMS */
@@ -72,7 +72,7 @@ h3{
 .contenedor .contenedor-items .item{
   max-width: 200px;
   margin: auto;
-  border: 1px solid #666;
+  border: 1px solid #000000;
   border-radius: 10px;
   padding: 20px;
   transition: .3s;
@@ -81,7 +81,7 @@ h3{
   width: 100%;
 }
 .contenedor .contenedor-items .item:hover{
-  box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 10px #184411;
   scale: 1.05;
 }
 .contenedor .contenedor-items .item .titulo-item{
@@ -101,7 +101,7 @@ h3{
   display: block;
   margin: 10px auto;
   border: none;
-  background-color: rgb(11, 10, 10);
+  background-color: rgb(17, 88, 42);
   color: #fff;
   padding: 5px 15px;
   border-radius: 5px;
@@ -109,11 +109,11 @@ h3{
 }
 
 .contenedor .contenedor-items .item .boton-item:hover{
- background-color: #2233b4; 
+ background-color: #020202; 
 }
 /* seccion carrito */
 .carrito{
-  border: 1px solid #666;
+  border: 1px solid #161616;
   width: 35%;
   margin-top: 30px;
   border-radius: 10px;
@@ -127,8 +127,8 @@ h3{
   opacity: 0;
 }
 .carrito .header-carrito{
-  background-color: #000;
-  color: #fff;
+  background-color: #184411;
+  color: #f1f4ef;
   text-align: center;
   padding: 30px 0;
 }
@@ -137,7 +137,7 @@ h3{
   align-items: center;
   /* justify-content: space-between; */
   position: relative;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #184411;
   padding: 20px;
 }
 .carrito .carrito-item img{
@@ -169,7 +169,7 @@ h3{
   line-height: 32px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 1px solid #26600f;
   cursor: pointer;
 }
 .carrito .carrito-item .carrito-item-precio{
@@ -182,14 +182,14 @@ h3{
   position: absolute;
   right: 15px;
   top: 15px;
-  color: #000;
+  color: #26600f;
   font-size: 20px;
   width: 40px;
   height: 40px;
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 1px solid #26600f;
   cursor: pointer;
   display: block;
   background: transparent;
@@ -200,7 +200,7 @@ h3{
 }
 
 .carrito-total{
-  background-color: #f3f3f3;
+  background-color: #184411;
   padding: 30px;
 }
 .carrito-total .fila{
@@ -367,7 +367,7 @@ svg circle {
 
 
 footer {
-  background-color: #2233b4;
+  background-color: #26600f;
   color: #fff;
   text-align: center;
   padding: 90px;
@@ -387,7 +387,7 @@ footer {
 .footer-links h4 {
   font-size: 20px;
   color: #ffffff;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   font-weight: 500;
   border-bottom: 2px solid #00c3ff;
  padding-bottom: 10px;
@@ -437,7 +437,7 @@ footer {
   align-items: center;
   justify-content: center;
   min-height: 30vh;
-  background-color:lightgrey;
+  background-color: #26600f;
 }
 
 .container{
@@ -449,7 +449,7 @@ footer {
   background:#0a0a0a;
   padding: 2px;
   width:1150px;
-  height: 150px;
+  height: 120px;
   overflow: hidden;
   scroll-behavior: smooth;
 
@@ -465,7 +465,7 @@ footer {
 .slider img:hover{
     opacity: 1;
     transform: scale(1.1);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 50px rgba(12, 120, 66, 0.992);
   }
   
 
@@ -474,7 +474,7 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #edeeef;
+  background: #0e742e;
   object-fit: contain;
   padding: 10px;
 }
