@@ -27,7 +27,7 @@ header{
   background-color: #2233b4;
   height: 100px;
   color: #26600f;
-  padding: 290px;
+  padding: 299px;
   margin-top: 50px;
   text-align: center;
 }
@@ -200,7 +200,7 @@ h3{
 }
 
 .carrito-total{
-  background-color: #184411;
+  background-color: #137223;
   padding: 30px;
 }
 .carrito-total .fila{
@@ -215,7 +215,7 @@ h3{
   display: block;
   width: 100%;
   border: none;
-  background: #000;
+  background: #0b0b0b;
   color: #fff;
   border-radius: 5px;
   font-size: 18px;
