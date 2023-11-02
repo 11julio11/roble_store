@@ -1,8 +1,8 @@
 // index
 
-document.addEventListener("DOMContentLoaded", function () {
-    const cartItemsElement = document.getElementById("cartItems");
-    const checkoutBtn = document.getElementById("checkoutBtn");
+/*document.addEventListener("DOMContentLoaded", function () {
+    const cartItemsElement = document.getElementById("carrito-item");
+    const checkoutBtn = document.getElementById("btn-pagar");
     let cartItems = [];
   
     function updateCartDisplay() {
@@ -28,17 +28,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     // Ejemplo de cómo agregar productos al carrito al hacer clic en el botón "Agregar al Carrito"
-    const addToCartButtons = document.querySelectorAll(".product button.btn");
+    const addToCartButtons = document.querySelectorAll("titulo-item");
     addToCartButtons.forEach(button => {
       button.addEventListener("click", function () {
         const product = {
           name: button.parentElement.querySelector("h3").textContent,
-          price: button.parentElement.querySelector("p:last-child").textContent,
+          price: button.parentElement.querySelector("boton-item").textContent,
         };
         addToCart(product);
       });
     });
-  });
+  });*/
 
   //contacto
   

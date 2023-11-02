@@ -370,7 +370,7 @@ footer {
   background-color: #26600f;
   color: #fff;
   text-align: center;
-  padding: 90px;
+  padding: 50px;
 }
 
 .footer-row{
@@ -437,7 +437,7 @@ footer {
   align-items: center;
   justify-content: center;
   min-height: 30vh;
-  background-color: #26600f;
+  background-color: #dcbc74;
 }
 
 .container{
@@ -446,7 +446,7 @@ footer {
 
 .container .slider{
   display: flex;
-  background:#0a0a0a;
+  background:#020202;
   padding: 2px;
   width:1150px;
   height: 120px;
@@ -465,7 +465,7 @@ footer {
 .slider img:hover{
     opacity: 1;
     transform: scale(1.1);
-    box-shadow: 0 0 50px rgba(12, 120, 66, 0.992);
+    box-shadow: 0 0 50px rgba(1, 1, 1, 0.992);
   }
   
 
@@ -476,7 +476,7 @@ footer {
   border-radius: 50%;
   background: #0e742e;
   object-fit: contain;
-  padding: 10px;
+  padding: 13px;
 }
 
 .container .left{
