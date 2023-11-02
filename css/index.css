@@ -320,7 +320,7 @@ main {
   position: relative;
   width: 80px;
   height: 80px;
-  margin: 20px;
+  margin: 30px;
   border-radius: 50%;
   transition: all .8s;
   cursor: pointer;
@@ -368,7 +368,7 @@ svg circle {
 
 footer {
   background-color: #184411;
-  color: #dcbc74;
+  color: #fbfbfa;
   text-align: center;
   padding: 60px;
 }
@@ -392,6 +392,10 @@ footer {
   border-bottom: 2px solid #ffffff;
  padding-bottom: 10px;
  display: inline-block;
+}
+
+.footer-links h4:hover{
+  color: #000000;
 }
 
 .footer-links ul {

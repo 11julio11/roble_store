@@ -11,12 +11,13 @@
 
 /* Estilos para la página "Sobre nosotros" */
 body {
-    font-family: Arial, sans-serif;
+    font-family: cooper,jumple, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
-    color: #333;
+    color: #ebd2d2;
 }
+
 
 main {
     max-width: 800px;
@@ -108,10 +109,11 @@ main {
   
 
 footer {
+  font-family: cooper,jumple,sans-serif;
     text-align: center;
     padding: 20px;
-    background-color: #2233b4;
-    color: #fff;
+    background-color: #184411;
+    color: #dcbc74;
 }
 
 .footer-row{
@@ -127,10 +129,10 @@ footer {
 
 .footer-links h4 {
   font-size: 20px;
-  color: #ffffff;
+  color: #dcbc74;
   margin-bottom: 25px;
   font-weight: 500;
-  border-bottom: 2px solid #00c3ff;
+  border-bottom: 2px solid #f8f8f8;
  padding-bottom: 10px;
  display: inline-block;
 }
@@ -150,7 +152,7 @@ footer {
 }
 
 .footer-links ul li a:hover {
-  color: #0088a9;
+  color: #dcbc74;
 }
 
 /* Estilos para pantallas más grandes */

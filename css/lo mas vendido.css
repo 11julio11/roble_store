@@ -11,13 +11,14 @@
 
 /* Estilos para la página de Productos Más Vendidos */
 body {
-    font-family: Arial, sans-serif;
+    font-family: cooper,jumple, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #eee5e5;
 }
 
 h1 {
+    font-family: cooper,jumple,sans-serif;
     background-image: url(../img/lo\ mas\ vendido.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -26,10 +27,12 @@ h1 {
     background-color: #2233b4;
     text-align: center;
     margin-top: 20px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .contenedor{
+    font-family: cooper,jumple,sans-serif;
+    color: #184411;
     max-width: 1200px;
     padding: 10px;
     margin: auto;
@@ -60,7 +63,7 @@ h3{
 .contenedor .contenedor-items .item{
     max-width: 200px;
     margin: auto;
-    border: 1px solid #666;
+    border: 1px solid #000000;
     border-radius: 10px;
     padding: 20px;
     transition: .3s;
@@ -69,7 +72,7 @@ h3{
     width: 100%;
 }
 .contenedor .contenedor-items .item:hover{
-    box-shadow: 0 0 10px #666;
+    box-shadow: 0 0 10px #184411;
     scale: 1.05;
 }
 .contenedor .contenedor-items .item .titulo-item{
@@ -89,19 +92,19 @@ h3{
     display: block;
     margin: 10px auto;
     border: none;
-    background-color: rgb(11, 10, 10);
-    color: #fff;
+    background-color: #184411;
+    color: #ddd5d5;
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .contenedor .contenedor-items .item .boton-item:hover{
-   background-color: #2233b4; 
+   background-color: #dcbc74; 
 }
 /* seccion carrito */
 .carrito{
-    border: 1px solid #666;
+    border: 1px solid #0a0a0a;
     width: 35%;
     margin-top: 30px;
     border-radius: 10px;
@@ -115,8 +118,8 @@ h3{
     opacity: 0;
 }
 .carrito .header-carrito{
-    background-color: #000;
-    color: #fff;
+    background-color: #184411;
+    color: #dcbc74;
     text-align: center;
     padding: 30px 0;
 }
@@ -125,7 +128,7 @@ h3{
     align-items: center;
     /* justify-content: space-between; */
     position: relative;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #184411;
     padding: 20px;
 }
 .carrito .carrito-item img{
@@ -157,7 +160,7 @@ h3{
     line-height: 32px;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid #184411;
     cursor: pointer;
 }
 .carrito .carrito-item .carrito-item-precio{
@@ -170,14 +173,14 @@ h3{
     position: absolute;
     right: 15px;
     top: 15px;
-    color: #000;
+    color: #184411;
     font-size: 20px;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid #215a0b;
     cursor: pointer;
     display: block;
     background: transparent;
@@ -188,7 +191,8 @@ h3{
 }
 
 .carrito-total{
-    background-color: #f3f3f3;
+    background-color: #184411;
+    color: #dcbc74;
     padding: 30px;
 }
 .carrito-total .fila{
@@ -351,10 +355,11 @@ main {
   }
   
 footer {
+    font-family: cooper,jumple,sans-serif;
     text-align: center;
     padding: 20px;
-    background-color: #2233b4;
-    color: #fff;
+    background-color: #184411;
+    color: #dcbc74;
 }
 
 .footer-row{
@@ -370,12 +375,16 @@ footer {
   
   .footer-links h4 {
     font-size: 20px;
-    color: #ffffff;
+    color: #dcbc74;
     margin-bottom: 25px;
     font-weight: 500;
-    border-bottom: 2px solid #00c3ff;
+    border-bottom: 2px solid #eef6f8;
    padding-bottom: 10px;
    display: inline-block;
+  }
+
+  .footer-links h4:hover{
+    color: #edebe7;
   }
   
   .footer-links ul {
@@ -393,7 +402,7 @@ footer {
   }
   
   .footer-links ul li a:hover {
-    color: #0088a9;
+    color: #dcbc74;
   }
   
   /* Estilos para pantallas más grandes */
