@@ -367,10 +367,10 @@ svg circle {
 
 
 footer {
-  background-color: #26600f;
-  color: #fff;
+  background-color: #184411;
+  color: #dcbc74;
   text-align: center;
-  padding: 50px;
+  padding: 60px;
 }
 
 .footer-row{
@@ -386,10 +386,10 @@ footer {
 
 .footer-links h4 {
   font-size: 20px;
-  color: #ffffff;
+  color: #dcbc74;
   margin-bottom: 29px;
-  font-weight: 500;
-  border-bottom: 2px solid #00c3ff;
+  font-weight: 550;
+  border-bottom: 2px solid #ffffff;
  padding-bottom: 10px;
  display: inline-block;
 }
@@ -409,7 +409,7 @@ footer {
 }
 
 .footer-links ul li a:hover {
-  color: #0088a9;
+  color: #dcbc74;
 }
 
 /* Estilos para pantallas más grandes */
@@ -426,7 +426,7 @@ footer {
   }
 
   .footer-links {
-      width: 25%;
+      width: 29%;
       padding: 0 20px;
   }
 }
