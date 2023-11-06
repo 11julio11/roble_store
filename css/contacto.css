@@ -8,21 +8,128 @@
 
 /* Estilos generales para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+  background: #184411;
+  color: #dcbc74;
+  line-height: 1.6;
+  font-family: cooper,jumple, sans-serif;
+  padding: 0 1.9em;
 }
 
-/* Estilos para el encabezado */
+/* Estilos para el encabezado 
 header {
     text-align: center;
     padding: 70px;
     background-color: #2233b4;
     color: #fff;
+}*/
+
+/*estilos para el formulario de contacto*/
+.container {
+  max-width: 1270px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
 
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
 
+.logo span {
+  color: rgb(246, 249, 246);
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 #1e7b0e;
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: #f9f9f9;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+  display: block;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form .block {
+  grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #dcbc74;
+  border-bottom: 1px solid #184411;
+}
+
+.contact-form form button {
+  background: #184411;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #dcbc74;
+  color: #184411;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: #184411;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+  body {
+      padding: 0 4em;
+  }
+  .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+      padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+      text-align: left;
+  }
+}
 
 /* Estilos para el pie de página */
 .container-pagina{
@@ -94,8 +201,8 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2233b4;
-    color: #fff;
+    background-color: #184411;
+    color: #dcbc74;
 }
 
 .footer-row{
@@ -111,10 +218,10 @@ footer {
 
 .footer-links h4 {
   font-size: 20px;
-  color: #ffffff;
+  color: #dcbc74;
   margin-bottom: 25px;
   font-weight: 500;
-  border-bottom: 2px solid #00c3ff;
+  border-bottom: 2px solid #ffffff;
  padding-bottom: 10px;
  display: inline-block;
 }
@@ -129,12 +236,12 @@ footer {
 }
 
 .footer-links ul li a {
-  color: #f2f2f2;
+  color: #dcbc74;
   text-decoration: none;
 }
 
 .footer-links ul li a:hover {
-  color: #0088a9;
+  color: #fbfbfb;
 }
 
 /* Estilos para pantallas más grandes */
