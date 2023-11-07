@@ -40,39 +40,48 @@
     });
   });*/
 
+
+
   //contacto
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    const contactForm = document.querySelector(".contact-form form");
-    const feedbackMessage = document.querySelector(".contact-form .feedback");
+  // Importamos la biblioteca Nodemailer
+  import { createTransport } from 'nodemailer';
 
-    contactForm.addEventListener("submit", function (event) {
-      event.preventDefault();
+  // Creamos un transportador de correo con los datos de nuestra cuenta de Gmail
+  var transporter = createTransport({
+      service: 'gmail',
+      auth: {
+          user: 'davidjulioromero86@gmail.com', // Aquí va tu correo
+          pass: 'todoesposible11' // Aquí va tu contraseña
+      }
+  });
 
-      const name = contactForm.querySelector("#name").value;
-      const email = contactForm.querySelector("#email").value;
-      const message = contactForm.querySelector("#message").value;
+  // Añadimos un evento al formulario para que se ejecute cuando se envíe
+  document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Evitamos que la página se recargue
 
-      // Enviar los datos del formulario a un servidor (AJAX o Fetch)
-      fetch("ruta-del-servidor/procesar-formulario.php", {
-        method: "POST",
-        body: JSON.stringify({ name, email, message }),
-        headers: {
-          "Content-Type": "application/json"
-        }
-      })
-      .then(response => response.json())
-      .then(data => {
-        if (data.success) {
-          feedbackMessage.innerHTML = "¡Mensaje enviado con éxito!";
-          feedbackMessage.classList.add("success");
-          contactForm.reset();
-        } else {
-          feedbackMessage.innerHTML = "Hubo un error al enviar el mensaje. Inténtalo de nuevo más tarde.";
-          feedbackMessage.classList.add("error");
-        }
+      // Recogemos los datos del formulario
+      var fullname = document.querySelector('input[name="fullname"]').value;
+      var email = document.querySelector('input[name="email"]').value;
+      var phone = document.querySelector('input[name="phone"]').value;
+      var affair = document.querySelector('input[name="affair"]').value;
+      var message = document.querySelector('textarea[name="message"]').value;
+
+      // Creamos las opciones del correo
+      var mailOptions = {
+          from: 'davidjulioromero86@gmail.com', // Aquí va tu correo
+          to: 'romerojesusdavid76@gmail.com', // Aquí va el correo del destinatario
+          subject: affair, // El asunto del correo
+          text: 'Nombres y Apellidos: ' + fullname + '\nCorreo Electrónico: ' + email + '\nNúmero de Teléfono: ' + phone + '\nMensaje: ' + message // El cuerpo del correo
+      };
+
+      // Enviamos el correo
+      transporter.sendMail(mailOptions, function(error, info){
+          if (error) {
+              console.log(error); // Si hay un error, lo mostramos en la consola
+          } else {
+              console.log('Email enviado: ' + info.response); // Si no hay errores, mostramos la respuesta del servidor
+          }
       });
-    });
   });
 
   

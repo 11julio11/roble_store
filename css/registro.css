@@ -1,22 +1,30 @@
 /* Estilos para la página de Registro de Clientes */
 body {
-    font-family: Arial, sans-serif;
+  background-image: url(../img/OIG.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    font-family: cooper,jumple,sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: #184411;
+    color: #dcbc74;
 }
 
-header {
-    background-color: #2233b4;
-    color: #fff;
+/*header {
+    background-color: #184411;
+    color: #dcbc74;
     text-align: center;
     padding: 70px;
-}
+}*/
 
 h1 {
     margin: 0;
     font-size: 24px;
+}
+
+h4{
+  color: #dcbc74;
 }
 
 main {
@@ -34,14 +42,16 @@ main {
 .registration-form input {
     width: 100%;
     padding: 10px;
+    background-color: #184411;
+    color: #dcbc74;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #184411;
     border-radius: 5px;
 }
 
 .registration-form button {
-    background-color: #2233b4;
-    color: #fff;
+    background-color: #184411;
+    color: #dcbc74;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -49,7 +59,8 @@ main {
 }
 
 .registration-form button:hover {
-    background-color: #e35c00;
+    background-color: #dcbc74;
+    color: #184411;
 }
 
 /* Estilos para el pie de página */
@@ -112,6 +123,64 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2233b4;
+    background-color:#184411;
     color: #fff;
+}
+
+.footer-row{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links{
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  color: #dcbc74;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #ffffff;
+ padding-bottom: 10px;
+ display: inline-block;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-links ul li {
+  line-height: 2.2;
+}
+
+.footer-links ul li a {
+  color: #ecebea;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: #dcbc74;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+  .container-pagina {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 20px;
+  }
+
+  .footer-row {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .footer-links {
+      width: 25%;
+      padding: 0 20px;
+  }
 }
