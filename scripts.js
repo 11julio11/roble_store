@@ -1,92 +1,49 @@
 // index
 
-/*document.addEventListener("DOMContentLoaded", function () {
-    const cartItemsElement = document.getElementById("carrito-item");
-    const checkoutBtn = document.getElementById("btn-pagar");
-    let cartItems = [];
-  
-    function updateCartDisplay() {
-      if (cartItems.length === 0) {
-        cartItemsElement.innerHTML = "<p>No hay productos en el carrito</p>";
-      } else {
-        const cartList = cartItems.map(item => `<li>${item.name} - Precio: ${item.price}</li>`).join("");
-        cartItemsElement.innerHTML = `<ul>${cartList}</ul>`;
-      }
+document.addEventListener("DOMContentLoaded", function () {
+  const cartItemsElement = document.getElementById("carrito-item");
+  const checkoutBtn = document.getElementById("btn-pagar");
+  let cartItems = [];
+
+  function updateCartDisplay() {
+    if (cartItems.length === 0) {
+      cartItemsElement.innerHTML = "<p>No hay productos en el carrito</p>";
+    } else {
+      const cartList = cartItems
+        .map((item) => `<li>${item.name} - Precio: ${item.price}</li>`)
+        .join("");
+      cartItemsElement.innerHTML = `<ul>${cartList}</ul>`;
     }
-  
-    function addToCart(product) {
-      cartItems.push(product);
-      updateCartDisplay();
-    }
-  
-    checkoutBtn.addEventListener("click", function () {
-      // Aquí puedes implementar la lógica para procesar el pago
-      // Por ejemplo, mostrar un mensaje de éxito y vaciar el carrito
-      alert("¡Pago exitoso! Gracias por tu compra.");
-      cartItems = [];
-      updateCartDisplay();
-    });
-  
-    // Ejemplo de cómo agregar productos al carrito al hacer clic en el botón "Agregar al Carrito"
-    const addToCartButtons = document.querySelectorAll("titulo-item");
-    addToCartButtons.forEach(button => {
-      button.addEventListener("click", function () {
-        const product = {
-          name: button.parentElement.querySelector("h3").textContent,
-          price: button.parentElement.querySelector("boton-item").textContent,
-        };
-        addToCart(product);
-      });
-    });
-  });*/
+  }
 
+  function addToCart(product) {
+    cartItems.push(product);
+    updateCartDisplay();
+  }
 
-
-  //contacto
-  // Importamos la biblioteca Nodemailer
-  import { createTransport } from 'nodemailer';
-
-  // Creamos un transportador de correo con los datos de nuestra cuenta de Gmail
-  var transporter = createTransport({
-      service: 'gmail',
-      auth: {
-          user: 'davidjulioromero86@gmail.com', // Aquí va tu correo
-          pass: 'todoesposible11' // Aquí va tu contraseña
-      }
+  checkoutBtn.addEventListener("click", function () {
+    // Aquí puedes implementar la lógica para procesar el pago
+    // Por ejemplo, mostrar un mensaje de éxito y vaciar el carrito
+    alert("¡Pago exitoso! Gracias por tu compra.");
+    cartItems = [];
+    updateCartDisplay();
   });
 
-  // Añadimos un evento al formulario para que se ejecute cuando se envíe
-  document.querySelector('form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Evitamos que la página se recargue
-
-      // Recogemos los datos del formulario
-      var fullname = document.querySelector('input[name="fullname"]').value;
-      var email = document.querySelector('input[name="email"]').value;
-      var phone = document.querySelector('input[name="phone"]').value;
-      var affair = document.querySelector('input[name="affair"]').value;
-      var message = document.querySelector('textarea[name="message"]').value;
-
-      // Creamos las opciones del correo
-      var mailOptions = {
-          from: 'davidjulioromero86@gmail.com', // Aquí va tu correo
-          to: 'romerojesusdavid76@gmail.com', // Aquí va el correo del destinatario
-          subject: affair, // El asunto del correo
-          text: 'Nombres y Apellidos: ' + fullname + '\nCorreo Electrónico: ' + email + '\nNúmero de Teléfono: ' + phone + '\nMensaje: ' + message // El cuerpo del correo
+  // Ejemplo de cómo agregar productos al carrito al hacer clic en el botón "Agregar al Carrito"
+  const addToCartButtons = document.querySelectorAll("titulo-item");
+  addToCartButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const product = {
+        name: button.parentElement.querySelector("h3").textContent,
+        price: button.parentElement.querySelector("boton-item").textContent,
       };
-
-      // Enviamos el correo
-      transporter.sendMail(mailOptions, function(error, info){
-          if (error) {
-              console.log(error); // Si hay un error, lo mostramos en la consola
-          } else {
-              console.log('Email enviado: ' + info.response); // Si no hay errores, mostramos la respuesta del servidor
-          }
-      });
+      addToCart(product);
+    });
   });
+});
 
-  
-  //carrito
-  //Variable que mantiene el estado visible del carrito
+//carrito
+//Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
 
 //Espermos que todos los elementos de la pàgina cargen para ejecutar el script
@@ -131,7 +88,7 @@ function ready(){
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
-    alert("Gracias por su compra");
+    alert("Gracias por la compra");
     //Elimino todos los elmentos del carrito
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
     while (carritoItems.hasChildNodes()){
@@ -175,7 +132,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
     var nombresItemsCarrito = itemsCarrito.getElementsByClassName('carrito-item-titulo');
     for(var i=0;i < nombresItemsCarrito.length;i++){
         if(nombresItemsCarrito[i].innerText==titulo){
-            alert("Este producto ya se encuentra en el carrito");
+            alert("El item ya se encuentra en el carrito");
             return;
         }
     }
@@ -272,7 +229,7 @@ function actualizarTotalCarrito(){
         var item = carritoItems[i];
         var precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
         //quitamos el simobolo peso y el punto de milesimos.
-        var precio = parseFloat(precioElemento.innerText.replace('$','').replace('.',''));
+        var precio = parseInt(precioElemento.innerText.replace('$','').replace('.',''));
         var cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
         console.log(precio);
         var cantidad = cantidadItem.value;
@@ -280,54 +237,51 @@ function actualizarTotalCarrito(){
     }
     total = Math.round(total * 100)/100;
 
-    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
+    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") +  ",00";
 
 }
 
 
 
-//promociones
-
-  
-//escribe aqui el codigo de esta sesion 
 
 
 
+
+
+
+
+
+
+
+//escribe aqui el codigo de esta sesion
 
 // registro
-document.addEventListener("DOMContentLoaded", function() {
-    const registrationForm = document.getElementById("registration-form");
-    const errorMessage = document.getElementById("error-message");
+document.addEventListener("DOMContentLoaded", function () {
+  const registrationForm = document.getElementById("registration-form");
+  const errorMessage = document.getElementById("error-message");
 
-    registrationForm.addEventListener("submit", function(event) {
-        event.preventDefault(); // Evita el envío del formulario
+  registrationForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // Evita el envío del formulario
 
-        // Obtén los valores de los campos de registro
-        const names = document.getElementById("names").value;
-        // Obtén los demás valores de los campos de registro
+    // Obtén los valores de los campos de registro
+    const names = document.getElementById("names").value;
+    // Obtén los demás valores de los campos de registro
 
-        // Realiza validaciones (puedes agregar más validaciones aquí)
-        if (!names || !email || !password || !confirmPassword) {
-            errorMessage.textContent = "Todos los campos son obligatorios.";
-            return;
-        }
+    // Realiza validaciones (puedes agregar más validaciones aquí)
+    if (!names || !email || !password || !confirmPassword) {
+      errorMessage.textContent = "Todos los campos son obligatorios.";
+      return;
+    }
 
-        if (password !== confirmPassword) {
-            errorMessage.textContent = "Las contraseñas no coinciden.";
-            return;
-        }
+    if (password !== confirmPassword) {
+      errorMessage.textContent = "Las contraseñas no coinciden.";
+      return;
+    }
 
-        // Si todas las validaciones pasan, puedes enviar los datos al servidor aquí
-        // Por ahora, simplemente limpiamos el mensaje de error
-        errorMessage.textContent = "";
-    });
+    // Si todas las validaciones pasan, puedes enviar los datos al servidor aquí
+    // Por ahora, simplemente limpiamos el mensaje de error
+    errorMessage.textContent = "";
+  });
 });
 
 //tipos de muebles
-
-
-
-
-
-
-
