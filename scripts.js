@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
 //carrito
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
@@ -205,6 +207,8 @@ function eliminarItemCarrito(event){
     //Si no hay elimino el carrito
     ocultarCarrito();
 }
+
+
 //Funciòn que controla si hay elementos en el carrito. Si no hay oculto el carrito.
 function ocultarCarrito(){
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
@@ -218,6 +222,10 @@ function ocultarCarrito(){
         items.style.width = '100%';
     }
 }
+
+
+
+
 //Actualizamos el total de Carrito
 function actualizarTotalCarrito(){
     //seleccionamos el contenedor carrito
@@ -229,15 +237,16 @@ function actualizarTotalCarrito(){
         var item = carritoItems[i];
         var precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
         //quitamos el simobolo peso y el punto de milesimos.
-        var precio = parseInt(precioElemento.innerText.replace('$','').replace('.',''));
+        var precio = parseFloat(precioElemento.innerText.replace('$','').replace('.',''));
         var cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
         console.log(precio);
         var cantidad = cantidadItem.value;
         total = total + (precio * cantidad);
     }
     total = Math.round(total * 100)/100;
+    total = total.toFixed(3).replace(/\d(?=(\d{3})+\.)/g, '$&.');
 
-    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") +  ",00";
+    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.slice(0, +10);
 
 }
 
