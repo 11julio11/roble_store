@@ -227,28 +227,30 @@ function ocultarCarrito(){
 
 
 //Actualizamos el total de Carrito
-function actualizarTotalCarrito(){
-    //seleccionamos el contenedor carrito
-    var carritoContenedor = document.getElementsByClassName('carrito')[0];
-    var carritoItems = carritoContenedor.getElementsByClassName('carrito-item');
-    var total = 0;
-    //recorremos cada elemento del carrito para actualizar el total
-    for(var i=0; i< carritoItems.length;i++){
-        var item = carritoItems[i];
-        var precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
-        //quitamos el simobolo peso y el punto de milesimos.
-        var precio = parseFloat(precioElemento.innerText.replace('$','').replace('.',''));
-        var cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
-        console.log(precio);
-        var cantidad = cantidadItem.value;
-        total = total + (precio * cantidad);
-    }
-    total = Math.round(total * 100)/100;
-    total = total.toFixed(3).replace(/\d(?=(\d{3})+\.)/g, '$&.');
+function actualizarTotalCarrito() {
+  // seleccionamos el contenedor carrito
+  var carritoContenedor = document.getElementsByClassName('carrito')[0];
+  var carritoItems = carritoContenedor.getElementsByClassName('carrito-item');
+  var total = 0;
 
-    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.slice(0, +10);
+  // recorremos cada elemento del carrito para actualizar el total
+  for (var i = 0; i < carritoItems.length; i++) {
+      var item = carritoItems[i];
+      var precioElemento = item.getElementsByClassName('carrito-item-precio')[0];
 
+      // quitamos el símbolo peso y el punto de milesimos
+      var precio = parseFloat(precioElemento.innerText.replace('$', '').replace(/[^0-9]/g, ''));
+      var cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
+      var cantidad = parseInt(cantidadItem.value, 10);
+      total += precio * cantidad;
+  }
+
+  total = Math.round(total);
+  // formateamos el total como moneda
+  var totalFormateado = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'COP', minimumFractionDigits: 0 }).format(total);
+  document.getElementsByClassName('carrito-precio-total')[0].innerText = totalFormateado;
 }
+
 
 
 
