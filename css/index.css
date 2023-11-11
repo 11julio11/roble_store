@@ -155,10 +155,10 @@ h3{
 }
 .carrito .carrito-item .carrito-item-cantidad{
   border: none;
-  font-size: 18px;
+  font-size: 13px;
   background-color: transparent;
   display: inline-block;
-  width:30px;
+  width:35px;
   padding: 5px;
   text-align: center;
 }
@@ -207,6 +207,7 @@ h3{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #dcbc74;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;

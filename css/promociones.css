@@ -46,6 +46,7 @@ h1 {
 
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items {
+  font-family: cooper, jumple, sans-serif;
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
