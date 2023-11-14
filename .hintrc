@@ -47,6 +47,7 @@
         "duplicate-id": "off",
         "duplicate-id-active": "off"
       }
-    ]
+    ],
+    "css-prefix-order": "off"
   }
 }

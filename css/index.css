@@ -373,6 +373,7 @@ footer {
   color: #fbfbfa;
   text-align: center;
   padding: 60px;
+  margin:auto;
 }
 
 .footer-row{
@@ -397,7 +398,8 @@ footer {
 }
 
 .footer-links h4:hover{
-  color: #000000;
+  color: #f7f4f4;
+  transform: scale(1.3);
 }
 
 .footer-links ul {
@@ -438,7 +440,13 @@ footer {
 }
 
 /*estilos para productos del mes*/
-.nav-prom{
+
+
+
+
+
+
+/*.nav-prom{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -453,16 +461,17 @@ footer {
 .container .slider{
   display: flex;
   background:#020202;
-  padding: 2px;
-  width:1150px;
-  height: 120px;
+  padding: 17px;
+  width:800px;
+  height: 160px;
   overflow: hidden;
   scroll-behavior: smooth;
 
 }
 
 .container .slider img{
-  margin: 3px;
+  margin: auto;
+  height: ;
   transition: transform 0.3s, box-shadw 0.3s;
   
 }
@@ -495,6 +504,6 @@ footer {
   right: 0;
   top: 50%;
   transform: translate(50%, -50%)
-}
+}*/
 
 /*estilos para el icono*/
