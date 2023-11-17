@@ -48,6 +48,7 @@
         "duplicate-id-active": "off"
       }
     ],
-    "css-prefix-order": "off"
+    "css-prefix-order": "off",
+    "detect-css-reflows/composite": "off"
   }
 }

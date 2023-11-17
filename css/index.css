@@ -20,7 +20,7 @@ body {
 
 /* Estilos para el encabezado */
 header{
-  background-image: url(../img/roble.jpeg);
+  background-image: url(../img/ROBLE.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -79,10 +79,11 @@ h3{
 }
 .contenedor .contenedor-items .item .img-item{
   width: 100%;
+  height: 100%;
 }
 .contenedor .contenedor-items .item:hover{
   box-shadow: 0 0 10px #184411;
-  scale: 1.05;
+  scale: 1.1;
 }
 .contenedor .contenedor-items .item .titulo-item{
   display: block;
@@ -111,6 +112,7 @@ h3{
 .contenedor .contenedor-items .item .boton-item:hover{
  background-color: #020202; 
 }
+
 /* seccion carrito */
 .carrito{
   border: 1px solid #161616;
@@ -440,7 +442,6 @@ footer {
 }
 
 /*estilos para productos del mes*/
-
 
 
 
