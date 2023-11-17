@@ -297,5 +297,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//funconamiemto del carrusel automatico
+//funcionamiento del carousel
 
