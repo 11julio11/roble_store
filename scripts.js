@@ -298,4 +298,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //funcionamiento del carousel
-
+ 
