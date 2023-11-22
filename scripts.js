@@ -90,7 +90,7 @@ function ready(){
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
-    alert("Gracias por la compra");
+    alert("Gracias por su compra");
     //Elimino todos los elmentos del carrito
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
     while (carritoItems.hasChildNodes()){
@@ -134,7 +134,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
     var nombresItemsCarrito = itemsCarrito.getElementsByClassName('carrito-item-titulo');
     for(var i=0;i < nombresItemsCarrito.length;i++){
         if(nombresItemsCarrito[i].innerText==titulo){
-            alert("El item ya se encuentra en el carrito");
+            alert("El producto ya se encuentra en el carrito");
             return;
         }
     }
@@ -253,17 +253,6 @@ function actualizarTotalCarrito() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 //escribe aqui el codigo de esta sesion
 
 // registro
@@ -298,4 +287,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //funcionamiento del carousel
- 
+
