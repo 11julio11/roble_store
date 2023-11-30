@@ -17,14 +17,14 @@ body {
     background-color: #eee5e5;
 }
 
-h1 {
+header{
     font-family: cooper,jumple,sans-serif;
     background-image: url(../img/lo\ mas\ vendido.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 290px;
-    height: 50px;
+    padding: 29px;
+    height: 800px;
     background-color: #2233b4;
     text-align: center;
     margin-top: 20px;
@@ -43,11 +43,12 @@ h1 {
     contain: paint;
 }
 
-h3{
+h1{
     text-align: center;
     margin-top: 20px;
     box-sizing: border-box;
-    color: #092cf3;
+    color: #184411;
+    font-family: cooper,jumple,sans-serif;
 }
 
 /* SECCION CONTENEDOR DE ITEMS */

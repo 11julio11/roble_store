@@ -16,13 +16,14 @@ body {
   padding: 1;
 }
 
-h1 {
+header{
   font-family: cooper,jumple,sans-serif;
   background-image: url(../img/tipos\ de\ muebles01.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 290px;
+  padding: 29px;
+  height: 500px;
   background-color: #2233b4;
   text-align: center;
   margin-top: 20px;

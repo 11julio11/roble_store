@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
 
+
 /* Resetear los márgenes y el padding para todos los elementos */
 * {
   margin: 0;
@@ -13,6 +14,9 @@ body {
   font-family: Cooper, jumple, sans-serif;
   background-color:  #ffffff ;
   color: #184411;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   line-height: 1.6;
   margin: 0;
 }
@@ -25,17 +29,14 @@ header{
   background-position: center center;
   background-size: cover;
   background-color: #22b424;
-  height: 100px;
+  height: 770px;
   color: #26600f;
-  padding: 299px;
+  padding: 30px;
   margin-top: 50px;
   text-align: center;
 }
 
 
-h2{
-  padding: 20px;
-}
 
 a{
   text-decoration: none;
@@ -60,7 +61,7 @@ h3{
 
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
-  margin-top: 30px;
+  margin-top: 90px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap:30px;
@@ -263,7 +264,7 @@ h3{
       justify-content: center;
   }
 
-  .product {
+  .item {
       width: 100%;
       text-align: center;
       margin-bottom: 20px;
@@ -283,7 +284,7 @@ h3{
       justify-content: center;
   }
 
-  .product {
+  .item {
       width: auto;
   }
 }
@@ -301,7 +302,7 @@ h3{
       justify-content: center;
   }
   
-  .product {
+  .item {
       width: auto;
   }
 }
@@ -374,14 +375,22 @@ svg circle {
 }
 
 
-
 footer {
   background-color: #184411;
   color: #fbfbfa;
   text-align: center;
   padding: 60px;
-  margin:auto;
-}
+  position: relative; /* Posicionamiento relativo */
+  bottom: 0; /* Colocar el footer en la parte inferior */
+  width: 100%; /* Ancho del 100% */
+ }
+ 
+ /* Estilo para dispositivos móviles */
+ @media screen and (max-width: 767px) {
+  footer {
+     padding: 40px; /* Ajustar el relleno para dispositivos más pequeños */
+  }
+ }
 
 .footer-row{
   display: flex;
@@ -447,7 +456,121 @@ footer {
 }
 
 /*estilos para productos del mes*/
-
+.caja {
+  width: 90%; /* Ancho de la caja */
+  height: 200px; /* Altura de la caja */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Margen automático en la izquierda y derecha */
+}
+.slider-wrapper {
+  position: relative;
+}
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 2.2rem;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.slider-wrapper .slide-button:hover {
+  background: #404040;
+}
+.slider-wrapper .slide-button#prev-slide {
+  left: -25px;
+  display: none;
+}
+.slider-wrapper .slide-button#next-slide {
+  right: -25px;
+}
+.slider-wrapper .image-list {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 18px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+.slider-wrapper .image-list .image-item {
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+}
+.container .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+  .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
+}
 
 /*.nav-prom{
   display: flex;

@@ -38,7 +38,8 @@
           "backdrop-filter",
           "contain",
           "scale",
-          "scrollbar-width"
+          "scrollbar-width",
+          "user-select"
         ]
       }
     ],
