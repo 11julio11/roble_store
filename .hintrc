@@ -37,7 +37,8 @@
         "ignore": [
           "backdrop-filter",
           "contain",
-          "scale"
+          "scale",
+          "scrollbar-width"
         ]
       }
     ],

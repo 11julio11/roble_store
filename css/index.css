@@ -20,7 +20,7 @@ body {
 
 /* Estilos para el encabezado */
 header{
-  background-image: url(../img/ROBLE2.jpeg);
+  background-image: url(..//img/roble.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -67,23 +67,27 @@ h3{
   grid-row-gap: 30px;
   /* width: 60%; */
   width: 100%;
+  height: 100%;
   transition: .3s;
 }
 .contenedor .contenedor-items .item{
   max-width: 200px;
+  max-height: 400px;
   margin: auto;
   border: 1px solid #000000;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
   transition: .3s;
 }
 .contenedor .contenedor-items .item .img-item{
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
+
+
 .contenedor .contenedor-items .item:hover{
   box-shadow: 0 0 10px #184411;
-  scale: 1.1;
+  scale: 1.0;
 }
 .contenedor .contenedor-items .item .titulo-item{
   display: block;
@@ -95,16 +99,17 @@ h3{
   display: block;
   text-align: center;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .contenedor .contenedor-items .item .boton-item{
   display: block;
-  margin: 10px auto;
+  margin: 10px ;
   border: none;
   background-color: rgb(17, 88, 42);
   color: #fff;
-  padding: 5px 15px;
+  padding: 4px;
+  height: auto;
   border-radius: 5px;
   cursor: pointer;
 }
