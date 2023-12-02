@@ -457,7 +457,7 @@ footer {
 
 /*estilos para productos del mes*/
 .caja {
-  width: 90%; /* Ancho de la caja */
+  width: 95%; /* Ancho de la caja */
   height: 200px; /* Altura de la caja */
   justify-content: center;
   align-items: center;
@@ -474,18 +474,18 @@ footer {
   height: 50px;
   width: 50px;
   z-index: 5;
-  color: #fff;
+  color: #dcbc74;
   display: flex;
   cursor: pointer;
   font-size: 2.2rem;
-  background: #000;
+  background: #184411;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   transform: translateY(-50%);
 }
 .slider-wrapper .slide-button:hover {
-  background: #404040;
+  background: #000000;
 }
 .slider-wrapper .slide-button#prev-slide {
   left: -25px;
@@ -508,20 +508,26 @@ footer {
   display: none;
 }
 .slider-wrapper .image-list .image-item {
-  width: 325px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 }
-.container .slider-scrollbar {
+
+.slider-wrapper .image-list .image-item:hover{
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+.caja .slider-scrollbar {
   height: 24px;
   width: 100%;
   display: flex;
   align-items: center;
 }
 .slider-scrollbar .scrollbar-track {
-  background: #ccc;
+  background: #dcbc74;
   width: 100%;
-  height: 2px;
+  height: 10px;
   display: flex;
   align-items: center;
   border-radius: 4px;
@@ -532,7 +538,7 @@ footer {
 }
 .slider-scrollbar .scrollbar-thumb {
   position: absolute;
-  background: #000;
+  background: #184411;
   top: 0;
   bottom: 0;
   width: 50%;
@@ -571,6 +577,17 @@ footer {
     width: 20%;
   }
 }
+
+
+
+
+/* Estilos CSS para la barra de navegación */
+
+
+
+
+
+
 
 /*.nav-prom{
   display: flex;

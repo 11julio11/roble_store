@@ -286,6 +286,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
 //funcionamiento del carousel
 const initSlider = () => {
   const imageList = document.querySelector(".slider-wrapper .image-list");
@@ -294,17 +298,17 @@ const initSlider = () => {
   const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
   const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
   
-  // Handle scrollbar thumb drag
+  // Manejar el arrastre con el pulgar en la barra de desplazamiento
   scrollbarThumb.addEventListener("mousedown", (e) => {
       const startX = e.clientX;
       const thumbPosition = scrollbarThumb.offsetLeft;
       const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
       
-      // Update thumb position on mouse move
+      // Actualizar la posición del pulgar al mover el mouse
       const handleMouseMove = (e) => {
           const deltaX = e.clientX - startX;
           const newThumbPosition = thumbPosition + deltaX;
-          // Ensure the scrollbar thumb stays within bounds
+          //Asegúrese de que el pulgar de la barra de desplazamiento permanezca dentro de los límites
           const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
           const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
           
