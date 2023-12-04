@@ -1,54 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/lo mas vendido.css">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/lo mas vendido.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="website icon" type="png" href="img/icono.png" />
     <title>Lo mas vendido</title>
-</head>
-<body>
-  <header>
-  <nav class="navbar navbar-light bg-light fixed-top">
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-light bg-light fixed-top d-flex justify-content-between"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Productos Más Vendidos</a>
-          <buttom class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </buttom>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <a class="navbar-brand" href="index.html">
+            Lo mas  Vendido
+          </a>
+
+          <div
+            class="d-flex justify-content-end align-items-center"
+            style="flex-grow: 1"
+          >
+            <!-- Formulario de búsqueda -->
+            <div class="col-md-5">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-3"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+
+            <!-- Botón del menú -->
+            <div>
+              <button
+                class="navbar-toggler ms-2"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
+
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/index.html"
+                    >Inicio</a
+                  >
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="offcanvasNavbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     Muebles
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="Promociones.html">Promociones</a></li>
-                    <li><a class="dropdown-item" href="lo mas vendido.html">Lo mas vendido</a></li>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="offcanvasNavbarDropdown"
+                  >
                     <li>
-                      <hr class="dropdown-divider">
+                      <a class="dropdown-item" href="Promociones.html"
+                        >Promociones</a
+                      >
                     </li>
-                    <li><a class="dropdown-item" href="tipos de muebles.html">Tipos de muebles</a></li>
-                    <li><a class="dropdown-item" href="Arma tu mueble.html">Arma tu mueble</a></li>
+                    <li>
+                      <a class="dropdown-item" href="lo mas vendido.html"
+                        >Lo mas vendido</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="tipos de muebles.html"
+                        >Tipos de muebles</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="Arma tu mueble.html"
+                        >Arma tu mueble</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
                 </li>
-                <li><a class="dropdown-item" href="usuario.html">Usuario</a></li>
-                <li><a class="dropdown-item" href="registro.html">Registro</a></li>
-                <li><a class="dropdown-item" href="carrito.html">Carrito</a></li>
-                
+                <li>
+                  <a class="dropdown-item" href="usuario.html">Usuario</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="registro.html">Registro</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="carrito.html">Carrito</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
@@ -57,105 +151,116 @@
           </div>
         </div>
       </nav>
-      </header>
-      <br>
+    </header>
+    <br />
     <h1></h1>
     <section class="contenedor">
-      
       <div class="contenedor-items">
-        <div class="item">
+          <div class="item" id="#">
           <span class="titulo-item">Mueble tv</span>
-          <img src="img/mueble tv.png" alt="" class="img-item">
+          <img src="img/mueble tv.png" alt="" class="img-item" />
           <span class="precio-item">$290.990</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+          <div class="item" id="#">
           <span class="titulo-item">Mesa convertible</span>
-          <img src="img/mesa convertible.png" alt="" class="img-item">
+          <img src="img/mesa convertible.png" alt="" class="img-item" />
           <span class="precio-item">$1.190.990</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+          <div class="item" id="#">
           <span class="titulo-item">Cama doble</span>
-          <img src="img/camadoble001.png" alt="" class="img-item">
+          <img src="img/camadoble001.png" alt="" class="img-item" />
           <span class="precio-item">$1.500.000</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+          <div class="item" id="#">
           <span class="titulo-item">Cama nido</span>
-          <img src="img/cama nido.png" alt="" class="img-item">
+          <img src="img/cama nido.png" alt="" class="img-item" />
           <span class="precio-item">$3.569.900</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+          <div class="item" id="#">
           <span class="titulo-item">Escritorio de madera</span>
-          <img src="img/escritorio de madera.png" alt="" class="img-item">
+          <img src="img/escritorio de madera.png" alt="" class="img-item" />
           <span class="precio-item">$900.000</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+          <div class="item" id="#">
           <span class="titulo-item">Mesa de 4 puestos</span>
-          <img src="img/mesa de 4 puestos.png" alt="" class="img-item">
+          <img src="img/mesa de 4 puestos.png" alt="" class="img-item" />
           <span class="precio-item">$1.500.000</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+          <div class="item" id="#">
           <span class="titulo-item">Espejo de roble</span>
-          <img src="img/espejo-de-pie-de-roble-natural_9965759.jpg" alt="" class="img-item">
+          <img
+            src="img/espejo-de-pie-de-roble-natural_9965759.jpg"
+            alt=""
+            class="img-item"
+          />
           <span class="precio-item">$1.700.000</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item"> 
+          <div class="item" id="#">
           <span class="titulo-item">Armario de roble</span>
-          <img src="img/armario-de-roble-natural_9062237.jpg" alt="" class="img-item">
+          <img
+            src="img/armario-de-roble-natural_9062237.jpg"
+            alt=""
+            class="img-item"
+          />
           <span class="precio-item">$999.999</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+          <div class="item" id="#">
           <span class="titulo-item">Banquillo</span>
-          <img src="img/silla 123.jpg" alt="" class="img-item">
+          <img src="img/silla 123.jpg" alt="" class="img-item" />
           <span class="precio-item">$150.000</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+          <div class="item" id="#">
           <span class="titulo-item">Sofa de jardin</span>
-          <img src="img/sofa-de-jardin-2-plazas.jpg" alt="" class="img-item">
+          <img src="img/sofa-de-jardin-2-plazas.jpg" alt="" class="img-item" />
           <span class="precio-item">$399.000</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+          <div class="item" id="#">
           <span class="titulo-item">Sofa blanco</span>
-          <img src="img/sofa-acacia_12020171.jpg" alt="" class="img-item">
+          <img src="img/sofa-acacia_12020171.jpg" alt="" class="img-item" />
           <span class="precio-item">$399.900</span>
           <button class="boton-item">Agregaral carrito</button>
         </div>
 
-        <div class="item">
+          <div class="item" id="#">
           <span class="titulo-item">Sofa de aluminio</span>
-          <img src="img/sofa-de-jardin-de-aluminio-.jpg" alt="" class="img-item">
+          <img
+            src="img/sofa-de-jardin-de-aluminio-.jpg"
+            alt=""
+            class="img-item"
+          />
           <span class="precio-item">$800.000</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
       </div>
-      <br>
+      <br />
       <!-- Carrito de Compras -->
       <div class="carrito" id="carrito">
         <div class="header-carrito">
-            <h2>Tu Carrito</h2>
+          <h2>Tu Carrito</h2>
         </div>
 
         <div class="carrito-items">
-            <!-- 
+          <!-- 
             <div class="carrito-item">
                 <img src="img/boxengasse.png" width="80px" alt="">
                 <div class="carrito-item-detalles">
@@ -189,18 +294,16 @@
              -->
         </div>
         <div class="carrito-total">
-            <div class="fila">
-                <strong>Tu Total</strong>
-                <span class="carrito-precio-total">
-                  $120.000,00
-                </span>
-            </div>
-            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+          <div class="fila">
+            <strong>Tu Total</strong>
+            <span class="carrito-precio-total"> $120.000,00 </span>
+          </div>
+          <button class="btn-pagar">
+            Pagar <i class="fa-solid fa-bag-shopping"></i>
+          </button>
         </div>
-    </div>
-
+      </div>
     </section>
-
 
     <footer class="footer">
       <div class="container-pagina">
@@ -251,43 +354,80 @@
           </div>
         </div>
       </div>
-      
-    
-        <h4>Encuentranos en:</h4>
+
+      <h4>Encuentranos en:</h4>
       <main>
         <div class="icon">
-          <a href="https://www.instagram.com/jesusjulioromero"><svg heigth="80" width="80">
-                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+          <a href="https://www.instagram.com/jesusjulioromero"
+            ><svg heigth="80" width="80">
+              <circle
+                cx="40"
+                cy="40"
+                r="35"
+                stroke="white"
+                stroke-width="4"
+                fill="none"
+              ></circle>
             </svg>
-            <i  class='bx bxl-instagram'></i></a>
+            <i class="bx bxl-instagram"></i
+          ></a>
         </div>
 
         <div class="icon">
-          <a href="https://web.facebook.com/jesus.julioromero.1/"> <svg heigth="80" width="80">
-                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+          <a href="https://web.facebook.com/jesus.julioromero.1/">
+            <svg heigth="80" width="80">
+              <circle
+                cx="40"
+                cy="40"
+                r="35"
+                stroke="white"
+                stroke-width="4"
+                fill="none"
+              ></circle>
             </svg>
-            <i class='bx bxl-facebook-circle'></i></a> 
+            <i class="bx bxl-facebook-circle"></i
+          ></a>
         </div>
 
         <div class="icon">
-          <a href="https://web.whatsapp.com/3206112864"> <svg heigth="80" width="80">
-                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+          <a href="https://web.whatsapp.com/3206112864">
+            <svg heigth="80" width="80">
+              <circle
+                cx="40"
+                cy="40"
+                r="35"
+                stroke="white"
+                stroke-width="4"
+                fill="none"
+              ></circle>
             </svg>
-            <i class='bx bxl-whatsapp' ></i></a>
+            <i class="bx bxl-whatsapp"></i
+          ></a>
         </div>
 
         <div class="icon">
-          <a href="https://twitter.com/@JessDav79612323"><svg heigth="80" width="80">
-                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+          <a href="https://twitter.com/@JessDav79612323"
+            ><svg heigth="80" width="80">
+              <circle
+                cx="40"
+                cy="40"
+                r="35"
+                stroke="white"
+                stroke-width="4"
+                fill="none"
+              ></circle>
             </svg>
-            <i  class='bx bxl-twitter' ></i></a>
+            <i class="bx bxl-twitter"></i
+          ></a>
         </div>
-        
-    </main>
-    <p>© 2023 muebles Pullman</p>
- </footer>
- <script src="js/scripts.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-</body>
+      </main>
+      <p>© 2023 muebles Pullman</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -31,17 +31,28 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-light bg-light fixed-top d-flex justify-content-between">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/logotipo.j-removebg-preview.png" alt="" width="210px" height="150px" />
-            </a>
-  
-            <div class="d-flex justify-content-between align-items-center" style="flex-grow: 1;">
-              <!-- Inicio del formulario de búsqueda -->
+      <nav
+        class="navbar navbar-light bg-light fixed-top d-flex justify-content-between"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/logotipo.j-removebg-preview.png"
+              alt=""
+              width="180px"
+              height="150px"
+            />
+          </a>
+
+          <div
+            class="d-flex justify-content-end align-items-center"
+            style="flex-grow: 1"
+          >
+            <!-- Formulario de búsqueda -->
+            <div class="col-md-5">
               <form class="d-flex" role="search">
                 <input
-                  class="form-control me-2"
+                  class="form-control me-3"
                   type="search"
                   placeholder="Buscar"
                   aria-label="Buscar"
@@ -50,8 +61,10 @@
                   Buscar
                 </button>
               </form>
-              <!-- Fin del formulario de búsqueda -->
-              <!-- Botón del menú -->
+            </div>
+
+            <!-- Botón del menú -->
+            <div>
               <button
                 class="navbar-toggler ms-2"
                 type="button"
@@ -62,98 +75,99 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
             </div>
-  
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-  
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      aria-current="page"
-                      href="/index.html"
-                      >Inicio</a
-                    >
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="offcanvasNavbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Muebles
-                    </a>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="offcanvasNavbarDropdown"
-                    >
-                      <li>
-                        <a class="dropdown-item" href="Promociones.html"
-                          >Promociones</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="lo mas vendido.html"
-                          >Lo mas vendido</a
-                        >
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li>
-                        <a class="dropdown-item" href="tipos de muebles.html"
-                          >Tipos de muebles</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="Arma tu mueble.html"
-                          >Arma tu mueble</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="usuario.html">Usuario</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="registro.html">Registro</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="carrito.html">Carrito</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="offcanvasNavbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Muebles
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="offcanvasNavbarDropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="Promociones.html"
+                        >Promociones</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="lo mas vendido.html"
+                        >Lo mas vendido</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="tipos de muebles.html"
+                        >Tipos de muebles</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="Arma tu mueble.html"
+                        >Arma tu mueble</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="usuario.html">Usuario</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="registro.html">Registro</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="carrito.html">Carrito</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
     <h3 style="text-align: center">productos Destacados</h3>
     <section class="contenedor">
       <!-- Contenedor de elementos -->
       <div class="contenedor-items">
-        <div class="item">
+        <div class="item" id="#">
           <span class="titulo-item">Sofa Moderno</span>
           <img
             src="https://www.pullman.com.co/uploads/pullman/product_images/1124/medium/sofa-alondra_HF6tc.jpg"
@@ -164,7 +178,7 @@
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+        <div class="item" id="#">
           <span class="titulo-item">Mesa de Comedor</span>
           <img
             src="https://www.pullman.com.co/uploads/pullman/product_images/1400/full/mesa-de-comedor-cris-4-puestos_qMgLt.jpg"
@@ -175,7 +189,7 @@
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+        <div class="item" id="#">
           <span class="titulo-item">Pack x2 Sillas</span>
           <img
             src="https://www.pullman.com.co/uploads/pullman/product_images/1404/medium/pack-2-sillas-italia_jwSfI.jpg"
@@ -186,14 +200,14 @@
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+        <div class="item" id="#">
           <span class="titulo-item">Maseta en roble</span>
           <img src="img/maceta en roble.png" alt="" class="img-item" />
           <span class="precio-item">$167.622</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+        <div class="item" id="#">
           <span class="titulo-item">Mesa</span>
           <img
             src="https://www.pullman.com.co/uploads/pullman/product_images/1403/medium/mesa-de-comedor-italia-6-puestos_gndqD.jpg"
@@ -206,21 +220,21 @@
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+        <div class="item" id="#">
           <span class="titulo-item">Jardinera en roble</span>
           <img src="img/jardinera.png" alt="" class="img-item" />
           <span class="precio-item">$90.000</span>
           <button class="boton-item">Agregar al carrito</button>
         </div>
 
-        <div class="item">
+        <div class="item" id="#">
           <span class="titulo-item">Mueble tv</span>
           <img src="img/mueble tv.png" alt="" class="img-item" />
           <span class="precio-item">$290.990</span>
           <button class="boton-item">Agregara al carrito</button>
         </div>
 
-        <div class="item">
+        <div class="item" id="#">
           <span class="titulo-item">Mesa convertible</span>
           <img src="img/mesa convertible.png" alt="" class="img-item" />
           <span class="precio-item">1.190.990</span>
@@ -278,7 +292,9 @@
         </div>
       </div>
     </section>
+
     <h2 style="text-align: center">Promociones del mes</h2>
+    <br />
     <div class="caja">
       <div class="slider-wrapper">
         <button id="prev-slide" class="slide-button material-symbols-rounded">

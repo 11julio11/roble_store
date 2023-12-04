@@ -44,7 +44,7 @@ a{
 
 .contenedor{
   max-width: 1200px;
-  padding: 10px;
+  padding: 1px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -59,13 +59,34 @@ h3{
   color: #184411;
 }
 
+h3:hover{
+  color: #dcbc74;
+  transition: .3s;
+  transform: scale(1.1);
+}
+
+h2{
+  text-align: center;
+  margin-top: 70px;
+  box-sizing: border-box;
+  color: #184411;
+}
+
+h2:hover{
+  color: #dcbc74;
+  transition: .3s;
+  transform: scale(1.1);
+}
+
+
+
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
-  margin-top: 90px;
+  margin-top: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap:30px;
-  grid-row-gap: 30px;
+  grid-row-gap: 20px;
   /* width: 60%; */
   width: 100%;
   height: 100%;
@@ -75,7 +96,7 @@ h3{
   max-width: 200px;
   max-height: 400px;
   margin: auto;
-  border: 1px solid #000000;
+  border: 1px solid #184411;
   border-radius: 10px;
   padding: 25px;
   transition: .3s;
@@ -88,7 +109,7 @@ h3{
 
 .contenedor .contenedor-items .item:hover{
   box-shadow: 0 0 10px #184411;
-  scale: 1.0;
+  scale: 1.08;
 }
 .contenedor .contenedor-items .item .titulo-item{
   display: block;
@@ -100,23 +121,24 @@ h3{
   display: block;
   text-align: center;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .contenedor .contenedor-items .item .boton-item{
   display: block;
   margin: 10px ;
+  font-size: 16px;
   border: none;
   background-color: rgb(17, 88, 42);
   color: #fff;
-  padding: 4px;
+  padding: 1px;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 .contenedor .contenedor-items .item .boton-item:hover{
- background-color: #020202; 
+ background-color: #dcbc74; 
 }
 
 /* seccion carrito */
@@ -255,7 +277,7 @@ h3{
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
   body {
-      font-size: 14px;
+      font-size: 16px;
   }
 
   .container {
@@ -458,7 +480,7 @@ footer {
 /*estilos para productos del mes*/
 .caja {
   width: 95%; /* Ancho de la caja */
-  height: 200px; /* Altura de la caja */
+  height: 270px; /* Altura de la caja */
   justify-content: center;
   align-items: center;
   margin: 0 auto; /* Margen automático en la izquierda y derecha */
@@ -582,6 +604,8 @@ footer {
 
 
 /* Estilos CSS para la barra de navegación */
+
+
 
 
 
