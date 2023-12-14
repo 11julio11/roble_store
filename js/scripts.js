@@ -352,3 +352,77 @@ const initSlider = () => {
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
 
+
+
+
+
+
+//funcionamiento del buscador
+//  lista de productos
+let productos = [
+    { id: 1, nombre: 'Sofa Moderno' },
+    { id: 2, nombre: 'Mesa de Comedor' },
+    { id: 3, nombre: 'Pack x2 Sillas' },
+    { id: 4, nombre: 'Maseta en roble' },
+    { id: 5, nombre: 'Mesa' },
+    { id: 6, nombre: 'Jardinera en roble' },
+    { id: 7, nombre: 'Mueble tv' },
+    { id: 8, nombre: 'Mesa convertible' },
+    { id: 9, nombre: 'SOFA GRIS' },
+    { id: 10, nombre: 'SILLA' },
+    { id: 11, nombre: 'Biblioteca' },
+    { id: 12, nombre: 'Mueble de televisor' },
+    { id: 13, nombre: 'Futones' },
+    { id: 14, nombre: 'Mesa convertible' },
+    { id: 15, nombre: 'Base de cama doble' },
+    { id: 16, nombre: 'Cama nido' },
+    { id: 17, nombre: 'Silla x2' },
+    { id: 18, nombre: 'Comoda' },
+    { id: 19, nombre: 'Maceta, Hoja De Roble' },
+    { id: 20, nombre: 'sillon reclinable' },
+    { id: 21, nombre: 'Mesa de centro' },
+    { id: 22, nombre: 'Sofa' },
+    { id: 23, nombre: 'silla para barra' },
+    { id: 24, nombre: 'Sofa clasico' },
+    { id: 25, nombre: 'Mueble Otomana' },
+    { id: 26, nombre: 'Mueble para televisor' },
+    { id: 27, nombre: 'Organizador de juguetes' },
+    { id: 28, nombre: 'Futon' },
+    { id: 29, nombre: 'Comoda de roble' },
+    { id: 30, nombre: 'Mesa de 4 Puestos' },
+    { id: 31, nombre: 'Melrose' },
+    { id: 32, nombre: 'Biblioteca' },
+    { id: 34, nombre: '' },
+    // ... más productos
+];
+
+// Función para buscar un producto por nombre
+function buscarProducto(nombre) {
+    return productos.filter(producto => producto.nombre.toLowerCase().includes(nombre.toLowerCase()));
+}
+
+// Obtén el formulario y el campo de búsqueda
+let formulario = document.querySelector('form');
+let campoBusqueda = formulario.querySelector('input[type="search"]');
+
+// Añadir un controlador de eventos al formulario para manejar la búsqueda
+formulario.addEventListener('submit', function(event) {
+    // Evita que el formulario se envíe (lo que recargaría la página)
+    event.preventDefault();
+
+    // Obtiene todos los elementos 'item'
+    let items = document.querySelectorAll('.item');
+
+    // Realizacion de la búsqueda y muestra los resultados
+    let terminoBusqueda = campoBusqueda.value.toLowerCase();
+    items.forEach(function(item) {
+        let titulo = item.querySelector('.titulo-item').textContent.toLowerCase();
+        if (titulo.includes(terminoBusqueda)) {
+            // Si el término de búsqueda está en el título, muestra el elemento
+            item.style.display = '';
+        } else {
+            // Si no, oculta el elemento
+            item.style.display = 'none';
+        }
+    });
+});
