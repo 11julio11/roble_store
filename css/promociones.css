@@ -240,50 +240,51 @@ h1 {
 }
 
 /*estilos para el pie de pagina */
-.container-pagina {
+.container-pagina{
   display: flex;
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-main {
+ }
+ 
+ 
+ main {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap;    
 }
-
-.icon {
+ 
+ .icon {
   position: relative;
   width: 80px;
   height: 80px;
-  margin: 20px;
+  margin: 30px;
   border-radius: 50%;
-  transition: all 0.8s;
+  transition: all .8s;
   cursor: pointer;
 }
 
 .icon:hover {
   background-color: #e60073;
-  box-shadow: 0 0 20px #e60073;
+  box-shadow:  0 0 20px #e60073 ;
 }
 
 .icon:hover:nth-child(2) {
   background-color: #1877f2;
-  box-shadow: 0 0 20px #1877f2;
+  box-shadow:  0 0 20px #1877f2;
 }
 
 .icon:hover:nth-child(3) {
   background-color: #25d366;
-  box-shadow: 0 0 20px #25d366;
+  box-shadow: 0 0 20px #25d366 ;
 }
 
 .icon:hover:nth-child(4) {
   background-color: #1da1f2;
-  box-shadow: 0 0 20px #1da1f2;
+  box-shadow:  0 0 20px #1da1f2 ;
 }
 
 .icon i {
@@ -291,92 +292,97 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   font-size: 1.7rem;
 }
 
 svg circle {
   stroke-dasharray: 150;
-  transition: all 0.8s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 
 .icon:hover circle {
   stroke-dasharray: 220;
 }
 
-footer {
-    font-family: cooper,jumple,sans-serif;
-  text-align: center;
-  padding: 20px;
-  background-color: #184411;
-  color: #dcbc74;
-}
-/*@media (min-width: 1024px) {
-    .card{
-        height: 700px;
-    }
-    .card-h3{
-        height: 110px;
-    }
-    .card-p{
-        height: 300px;
-    }
-}*/
-
-.footer-row {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-links {
-  width: 100%;
-  padding: 20px 0;
-  box-sizing: border-box;
-}
-
-.footer-links h4 {
-  font-size: 20px;
-  color: #dcbc74;
-  margin-bottom: 25px;
-  font-weight: 500;
-  border-bottom: 2px solid #f8f8f8;
+ 
+ 
+ footer {
+   background-color: #184411;
+   color: #fbfbfa;
+   text-align: center;
+   padding: 60px;
+   position: relative; /* Posicionamiento relativo */
+   bottom: 0; /* Colocar el footer en la parte inferior */
+   width: 100%; /* Ancho del 100% */
+  }
+  
+  /* Estilo para dispositivos móviles */
+  @media screen and (max-width: 767px) {
+   footer {
+      padding: 40px; /* Ajustar el relleno para dispositivos más pequeños */
+   }
+  }
+ 
+ .footer-row{
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .footer-links{
+   width: 100%;
+   padding: 20px 0;
+   box-sizing: border-box;
+ }
+ 
+ .footer-links h4 {
+   font-size: 20px;
+   color: #dcbc74;
+   margin-bottom: 29px;
+   font-weight: 550;
+   border-bottom: 2px solid #ffffff;
   padding-bottom: 10px;
   display: inline-block;
-}
-
-.footer-links ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.footer-links ul li {
-  line-height: 2.2;
-}
-
-.footer-links ul li a {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-.footer-links ul li a:hover {
-  color: #dcbc74;
-}
-
-/* Estilos para pantallas más grandes */
-@media (min-width: 768px) {
-  .container-pagina {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-
-  .footer-row {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .footer-links {
-    width: 25%;
-    padding: 0 20px;
-  }
-}
+ }
+ 
+ .footer-links h4:hover{
+   color: #f7f4f4;
+   transform: scale(1.3);
+ }
+ 
+ .footer-links ul {
+   list-style-type: none;
+   padding-left: 0;
+ }
+ 
+ .footer-links ul li {
+   line-height: 2.2;
+ }
+ 
+ .footer-links ul li a {
+   color: #f2f2f2;
+   text-decoration: none;
+ }
+ 
+ .footer-links ul li a:hover {
+   color: #dcbc74;
+ }
+ 
+ /* Estilos para pantallas más grandes */
+ @media (min-width: 768px) {
+   .container-pagina {
+       flex-direction: row;
+       justify-content: space-between;
+       padding: 0 20px;
+   }
+ 
+   .footer-row {
+       flex-direction: row;
+       justify-content: space-between;
+   }
+ 
+   .footer-links {
+       width: 29%;
+       padding: 0 20px;
+   }
+ }

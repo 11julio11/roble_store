@@ -360,6 +360,7 @@ window.addEventListener("load", initSlider);
 //funcionamiento del buscador
 //  lista de productos
 let productos = [
+    //inicio
     { id: 1, nombre: 'Sofa Moderno' },
     { id: 2, nombre: 'Mesa de Comedor' },
     { id: 3, nombre: 'Pack x2 Sillas' },
@@ -368,6 +369,7 @@ let productos = [
     { id: 6, nombre: 'Jardinera en roble' },
     { id: 7, nombre: 'Mueble tv' },
     { id: 8, nombre: 'Mesa convertible' },
+    //carrito
     { id: 9, nombre: 'SOFA GRIS' },
     { id: 10, nombre: 'SILLA' },
     { id: 11, nombre: 'Biblioteca' },
@@ -380,6 +382,7 @@ let productos = [
     { id: 18, nombre: 'Comoda' },
     { id: 19, nombre: 'Maceta, Hoja De Roble' },
     { id: 20, nombre: 'sillon reclinable' },
+    //Arma tu mueble
     { id: 21, nombre: 'Mesa de centro' },
     { id: 22, nombre: 'Sofa' },
     { id: 23, nombre: 'silla para barra' },
@@ -392,7 +395,53 @@ let productos = [
     { id: 30, nombre: 'Mesa de 4 Puestos' },
     { id: 31, nombre: 'Melrose' },
     { id: 32, nombre: 'Biblioteca' },
-    { id: 34, nombre: '' },
+    //lo mas ventido
+    { id: 33, nombre: 'Mueble tv' },
+    {id: 34, nombre: 'Mesa convertibe'},
+    {id: 35, nombre: 'Cama doble'},
+    {id: 36, nombre: 'Cama nido'},
+    {id: 37, nombre: 'Escritorio de madera'},
+    {id: 38, nombre: 'Mesa de 4 puestos'},
+    {id: 39, nombre: 'Espejo de roble'},
+    {id: 40, nombre: 'Armario de roble'},
+    {id: 41, nombre: 'Banquillo'},
+    {id: 42, nombre: 'Sofa de jardin '},
+    {id: 43, nombre: 'Sofa blanco'},
+    {id: 44, nombre: 'Sofa de aluminio'},
+    //promociones
+    {id: 45, nombre: 'Sofa Esquinero'},
+    {id: 46, nombre: 'Sofa Palet Estibas 2 Puestos'},
+    {id: 47, nombre: 'Sofa Classic 3 Puestos'},
+    {id: 48, nombre: 'Sillon 1 Puesto Gris'},
+    {id: 49, nombre: 'Sillon Reclinable Giratorio'},
+    {id: 50, nombre: 'Mesa convertible'},
+    {id: 51, nombre: 'Closet Bariloche 6 Puertas'},
+    {id: 52, nombre: 'Cómoda 5 cajones kaia'},
+    {id: 53, nombre: 'Base Cama Doble'},
+    {id: 54, nombre: 'Comoda'},
+    {id: 55, nombre: 'Maceta, Hojas De Roble'},
+    {id: 56, nombre: 'Sofa reclinable'},
+    //tipos de mubles
+    {id: 57, nombre: 'Asiento reclinable'},
+    {id: 58, nombre: 'Sofa reclinable solo'},
+    {id: 59, nombre: 'Banco Otomana Gris'},
+    {id: 60, nombre: 'Sofa en L'},
+    {id: 61, nombre: 'Comedor de 6 puestos'},
+    {id: 62, nombre: 'Comodas'},
+    {id: 63, nombre: 'Otomanas'},
+    {id: 64, nombre: 'Sofa en L negro'},
+    {id: 65, nombre: 'Mueble de telivisor en roble'},
+    {id: 66, nombre: 'Biblioteca'},
+    {id: 67, nombre: 'Futones'},
+    {id: 68, nombre: 'Mesa'},
+    {id: 69, nombre: 'Mesas auxiliares'},
+    {id: 70, nombre: 'Mini Bar'},
+    {id: 71, nombre: 'Patas de muebles'},
+    {id: 72, nombre: 'Organizadores de juguetes'},
+    {id: 73, nombre: 'Muebles para jardin'},
+    {id: 74, nombre: 'Mesa de comedor redonda'},
+    {id: 75, nombre: 'Maseta de roble'},
+    {id: 76, nombre: 'Jardinera'},
     // ... más productos
 ];
 
@@ -401,7 +450,7 @@ function buscarProducto(nombre) {
     return productos.filter(producto => producto.nombre.toLowerCase().includes(nombre.toLowerCase()));
 }
 
-// Obtén el formulario y el campo de búsqueda
+// Obténcion  del formulario y el campo de búsqueda
 let formulario = document.querySelector('form');
 let campoBusqueda = formulario.querySelector('input[type="search"]');
 
