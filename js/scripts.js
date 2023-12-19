@@ -442,6 +442,8 @@ let productos = [
     {id: 74, nombre: 'Mesa de comedor redonda'},
     {id: 75, nombre: 'Maseta de roble'},
     {id: 76, nombre: 'Jardinera'},
+    //menu
+
     // ... más productos
 ];
 
@@ -450,19 +452,16 @@ function buscarProducto(nombre) {
     return productos.filter(producto => producto.nombre.toLowerCase().includes(nombre.toLowerCase()));
 }
 
-// Obténcion  del formulario y el campo de búsqueda
+// Obtención del formulario y el campo de búsqueda
 let formulario = document.querySelector('form');
 let campoBusqueda = formulario.querySelector('input[type="search"]');
 
-// Añadir un controlador de eventos al formulario para manejar la búsqueda
-formulario.addEventListener('submit', function(event) {
-    // Evita que el formulario se envíe (lo que recargaría la página)
-    event.preventDefault();
-
+// Añadir un controlador de eventos al campo de búsqueda para manejar la búsqueda en tiempo real
+campoBusqueda.addEventListener('input', function() {
     // Obtiene todos los elementos 'item'
     let items = document.querySelectorAll('.item');
 
-    // Realizacion de la búsqueda y muestra los resultados
+    // Realización de la búsqueda y muestra los resultados
     let terminoBusqueda = campoBusqueda.value.toLowerCase();
     items.forEach(function(item) {
         let titulo = item.querySelector('.titulo-item').textContent.toLowerCase();
