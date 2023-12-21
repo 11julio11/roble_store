@@ -591,6 +591,35 @@ footer {
   top: -10px;
   bottom: -10px;
 }
+
+figure {
+  display: inline-block;
+  margin: 10px;
+  background: #f9f9f9;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+figure:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+figcaption {
+  color: #333;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+
+
+
 /* Styles for mobile and tablets */
 @media only screen and (max-width: 1023px) {
   .slider-wrapper .slide-button {

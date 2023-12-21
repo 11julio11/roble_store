@@ -1,46 +1,5 @@
-// index
 
-document.addEventListener("DOMContentLoaded", function () {
-  const cartItemsElement = document.getElementById("carrito-item");
-  const checkoutBtn = document.getElementById("btn-pagar");
-  let cartItems = [];
-
-  function updateCartDisplay() {
-    if (cartItems.length === 0) {
-      cartItemsElement.innerHTML = "<p>No hay productos en el carrito</p>";
-    } else {
-      const cartList = cartItems
-        .map((item) => `<li>${item.name} - Precio: ${item.price}</li>`)
-        .join("");
-      cartItemsElement.innerHTML = `<ul>${cartList}</ul>`;
-    }
-  }
-
-  function addToCart(product) {
-    cartItems.push(product);
-    updateCartDisplay();
-  }
-
-  checkoutBtn.addEventListener("click", function () {
-    // Aquí puedes implementar la lógica para procesar el pago
-    // Por ejemplo, mostrar un mensaje de éxito y vaciar el carrito
-    alert("¡Pago exitoso! Gracias por tu compra.");
-    cartItems = [];
-    updateCartDisplay();
-  });
-
-  // Ejemplo de cómo agregar productos al carrito al hacer clic en el botón "Agregar al Carrito"
-  const addToCartButtons = document.querySelectorAll("titulo-item");
-  addToCartButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const product = {
-        name: button.parentElement.querySelector("h3").textContent,
-        price: button.parentElement.querySelector("boton-item").textContent,
-      };
-      addToCart(product);
-    });
-  });
-});
+  
 
 
 
