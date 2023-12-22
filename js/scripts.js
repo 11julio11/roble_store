@@ -1,8 +1,4 @@
 
-  
-
-
-
 //carrito
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
@@ -249,7 +245,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//funcionamiento del carousel
+//FUNCIONAMIENTO DEL SLIDER
+
 const initSlider = () => {
   const imageList = document.querySelector(".slider-wrapper .image-list");
   const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
@@ -316,7 +313,7 @@ window.addEventListener("load", initSlider);
 
 
 
-//funcionamiento del buscador
+//FUNCIONAMIENTO DEL BUSCADOR
 //  lista de productos
 let productos = [
     //inicio
