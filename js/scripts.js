@@ -210,37 +210,6 @@ function actualizarTotalCarrito() {
 
 //escribe aqui el codigo de esta sesion
 
-// registro
-document.addEventListener("DOMContentLoaded", function () {
-  const registrationForm = document.getElementById("registration-form");
-  const errorMessage = document.getElementById("error-message");
-
-  registrationForm.addEventListener("submit", function (event) {
-    event.preventDefault(); // Evita el envío del formulario
-
-    // Obtén los valores de los campos de registro
-    const names = document.getElementById("names").value;
-    // Obtén los demás valores de los campos de registro
-
-    // Realiza validaciones (puedes agregar más validaciones aquí)
-    if (!names || !email || !password || !confirmPassword) {
-      errorMessage.textContent = "Todos los campos son obligatorios.";
-      return;
-    }
-
-    if (password !== confirmPassword) {
-      errorMessage.textContent = "Las contraseñas no coinciden.";
-      return;
-    }
-
-    // Si todas las validaciones pasan, puedes enviar los datos al servidor aquí
-    // Por ahora, simplemente limpiamos el mensaje de error
-    errorMessage.textContent = "";
-  });
-});
-
-
-
 
 
 
@@ -405,23 +374,15 @@ let productos = [
 
 // Función para buscar un producto por nombre
 function buscarProducto(nombre) {
-    return productos.filter(producto => producto.nombre.toLowerCase().includes(nombre.toLowerCase()));
-}
+    let productosFiltrados = productos.filter(producto => producto.nombre.toLowerCase().includes(nombre.toLowerCase()));
 
-// Obtención del formulario y el campo de búsqueda
-let formulario = document.querySelector('form');
-let campoBusqueda = formulario.querySelector('input[type="search"]');
-
-// Añadir un controlador de eventos al campo de búsqueda para manejar la búsqueda en tiempo real
-campoBusqueda.addEventListener('input', function() {
     // Obtiene todos los elementos 'item'
     let items = document.querySelectorAll('.item');
 
     // Realización de la búsqueda y muestra los resultados
-    let terminoBusqueda = campoBusqueda.value.toLowerCase();
     items.forEach(function(item) {
         let titulo = item.querySelector('.titulo-item').textContent.toLowerCase();
-        if (titulo.includes(terminoBusqueda)) {
+        if (titulo.includes(nombre.toLowerCase())) {
             // Si el término de búsqueda está en el título, muestra el elemento
             item.style.display = '';
         } else {
@@ -429,4 +390,24 @@ campoBusqueda.addEventListener('input', function() {
             item.style.display = 'none';
         }
     });
+
+    return productosFiltrados;
+}
+
+// Añadir un controlador de eventos al campo de búsqueda para manejar la búsqueda en tiempo real
+let campoBusqueda = document.querySelector('input[type="search"]');
+campoBusqueda.addEventListener('input', function() {
+    buscarProducto(campoBusqueda.value);
+});
+
+// Añadir un controlador de eventos al formulario para manejar la búsqueda cuando se presiona Enter o se hace clic en el botón de búsqueda
+let formulario = document.querySelector('form');
+formulario.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe y recargue la página
+    buscarProducto(campoBusqueda.value);
+});
+
+// Añadir un controlador de eventos al evento 'DOMContentLoaded' para realizar la búsqueda cuando se carga la página por primera vez
+document.addEventListener('DOMContentLoaded', function() {
+    buscarProducto(campoBusqueda.value);
 });
