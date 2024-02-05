@@ -142,6 +142,11 @@ h2:hover{
  background-color: #dcbc74; 
 }
 
+.buttom{
+  margin-bottom:10px;
+  margin-left:1rem;
+
+}
 /* seccion carrito */
 .carrito {
   border: 1px solid #000000;
